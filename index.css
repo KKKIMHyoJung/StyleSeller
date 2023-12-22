@@ -998,13 +998,13 @@ sec3 - #sec3img
 
 
 /*###################################
-#sec5
+#sec5 - section5
 ###################################*/
 
 #sec5 {
-	border: 1px solid red;
-	width: 100%;
-	padding: 180px 24px;
+/*	border: 1px solid red;*/
+	width: calc(100% - 160px);
+	padding: 180px 80px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -1017,7 +1017,7 @@ sec3 - #sec3img
 	position: relative;
 	top: 0;
 	margin-bottom: 50px;
-	left: 20px;
+	left: 30px;
 }
 
 
@@ -1028,8 +1028,8 @@ sec3 - #sec3img
 }
 
 #sec5 .sec5_card_wapper .sec5_card {
-	border: 1px solid red;
-	width: calc(50% - 45px);
+/*	border: 1px solid red;*/
+	width: calc(50% - 20px);
 	height: 620px;
 	padding: 40px 44px 0;
 	border-radius: 15px;
@@ -1037,6 +1037,7 @@ sec3 - #sec3img
 	box-sizing: border-box;
 	float: left;
 	margin: 0 10px 20px 10px;
+	cursor: pointer;
 }
 
 #sec5 .sec5_card_wapper .sec5_card .sec5_card_bg {
@@ -1049,20 +1050,20 @@ sec3 - #sec3img
 	border-radius: 15px;
 }
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(1) .sec5_card_bg {
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(1) .sec5_card_bg, #sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(2) {
 	background: url(img/bg_review1.jpg) no-repeat center/cover;
 }
 
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(2) .sec5_card_bg {
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(3) .sec5_card_bg, #sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(4) {
 	background: url(img/bg_review2.jpeg) no-repeat center/cover;
 }
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(3) .sec5_card_bg {
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(5) .sec5_card_bg, #sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(6) {
 	background: url(img/bg_review3.jpg) no-repeat center/cover;
 }
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(4) .sec5_card_bg {
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(7) .sec5_card_bg, #sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(8) {
 	background: url(img/bg_review4.jpg) no-repeat center/cover;
 }
 
@@ -1081,7 +1082,7 @@ sec3 - #sec3img
 /*	font-weight: bolder;*/
 	display: flex;
 	line-height: 41px;
-	font-size: 1.2em;
+	font-size: 1.0em;
 }
 
 #sec5 .sec5_card_wapper .sec5_card .sec5_card_seller .seller_img {
@@ -1095,17 +1096,112 @@ sec3 - #sec3img
 	background: url(img/seller_profile1.png) no-repeat center/cover;
 }
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(2) .sec5_card_seller .seller_img  {
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(3) .sec5_card_seller .seller_img  {
 	background: url(img/seller_profile2.png) no-repeat center/cover;
 }
 
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(3) .sec5_card_seller .seller_img  {
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(5) .sec5_card_seller .seller_img  {
 	background: url(img/seller_profile3.png) no-repeat center/cover;
 }
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(4) .sec5_card_seller .seller_img  {
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(7) .sec5_card_seller .seller_img  {
 	background: url(img/seller_profile4.png) no-repeat center/cover;
+}
+
+
+
+
+
+#sec5 .sec5_card_wapper .sec5_card .sec5_card_title span {
+	background: url(img/ic_plus.png) no-repeat center/cover;
+	width: 33px;
+	height: 33px;
+	right: 40px;
+	position: absolute;
+}
+
+
+/*추가추가*/
+#sec5 .sec5_card_wapper .sec5_card_hover{
+/*	border: 1px solid red;*/
+	width: calc(50% - 100px);
+	height: 620px;
+	padding: 40px 44px 0;
+	border-radius: 15px;
+	position: absolute;
+	box-sizing: border-box;
+	float: left;
+	margin: 0 10px 10px 10px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+
+
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(4) {
+		left: 50%;
+	
+}
+
+
+
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(6) {
+		top: 1005px;
+
+}
+
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(8) {
+		left: 50%;
+		top: 1005px;
+}
+
+/*임시!*/
+.sec5_card {
+/*	display: none;*/
+
+}
+
+
+.sec5_card_hover_subtitle, .sec5_card_hover_account {
+	font-weight: 	bolder;
+	font-size: 1.5em;
+
+
+}
+
+.sec5_card_hover_result {
+	font-weight: bolder;
+}
+
+.sec5_card_hover_content {
+	margin-top: 20px;
+}
+
+#sec5 .sec5_card_wapper .sec5_card_hover .sec5_card_subimg {
+		width: 354px;
+		height: 374px;	
+		position: absolute;
+		top: 250px;
+		left: calc(50% - 180px);
+/*		margin: 50px 0 0 20px;*/
+}
+
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(2) .sec5_card_subimg{
+		background: url(img/seller_ui1.png);
+
+}
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(4) .sec5_card_subimg{
+		background: url(img/seller_ui2.png);
+
+}
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(6) .sec5_card_subimg{
+		background: url(img/seller_ui3.png);
+
+}
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(8) .sec5_card_subimg{
+		background: url(img/seller_ui4.png);
+
 }
 
 
@@ -1116,11 +1212,73 @@ sec3 - #sec3img
 ##################################*/
 
 
-
-
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1030px) {
 	#gnb .material-symbols-outlined {
 		display: none;
+	}
+/*
+	#sec5 {
+
+		width: calc(100% - 40px);
+		padding: 180px 20px;
+
+	}*/
+	
+}
+
+
+
+/*sec5를 맞춰주기 위한 미디어쿼리	*/
+
+@media screen and (min-width: 960px) and (max-width: 1029px) {
+
+	#gnb .material-symbols-outlined {
+		display: none;
+	}
+
+	#sec5 {
+
+		width: calc(100% - 40px);
+		padding: 180px 0px;
+
+	}
+
+/*
+	#sec5 .sec5_card_wapper .sec5_card {
+
+		width: calc(100% - 65px);
+		height: 360px;
+
+	}*/
+
+
+
+
+	#sec5 .sec5_card_wapper .sec5_card .sec5_card_title {
+		font-size: 1.5em;
+
+	}
+
+
+	#sec5 .sec5_card_wapper .sec5_card .sec5_card_seller p {
+
+		line-height: 35px;
+		font-size: 0.9em;
+	}
+
+	#sec5 {
+
+		width: calc(100% - 40px);
+		padding: 180px 20px;
+
+	}
+
+
+
+	#sec5 .sec5_card_wapper .sec5_card_hover{
+/*		border: 1px solid red;*/
+		width: calc(50% - 40px);
+
 	}
 
 
@@ -1136,15 +1294,40 @@ sec3 - #sec3img
 	}
 
 
-}
+		#sec5 .sec5_card_wapper .sec5_card .sec5_card_title {
+		font-size: 1.5em;
+
+	}
+
+	#sec5 .sec5_card_wapper .sec5_card .sec5_card_seller p {
+
+		line-height: 35px;
+		font-size: 0.8em;
+		left: 5px;
+	}
+
+
+	#sec5 {
+
+		width: calc(100% - 40px);
+		padding: 180px 0px;
+
+	}
 
 
 
 
+	#sec5 .sec5_card_wapper .sec5_card_hover{
+/*		border: 1px solid red;*/
+		width: calc(50% - 20px);
 
-@media screen and (min-width: 768px) and (max-width: 959px) {
-	#gnb .material-symbols-outlined {
-		display: none;
+	}
+
+
+	#sec5 .sec5_card_wapper .sec5_card_hover .sec5_card_subimg {
+
+		left: calc(50% - 175px);
+
 	}
 
 }
@@ -1352,6 +1535,7 @@ section2 - 미디어 쿼리
 	left: 130px;	
 }
 
+
 #sec2 #sec2content1 .sec2Btn {
 	left: 100px;
 	top: 120px;
@@ -1399,9 +1583,7 @@ section3 - 미디어 쿼리
 	}
 
 
-/*###################################
-section4 - 미디어쿼리
-#####################################*/
+
 
 	#sec4 {
 		background: url(img/m_bg_3.jpg) no-repeat center/cover !important;
@@ -1438,9 +1620,107 @@ section4 - 미디어쿼리
 		left: 22%;
 	}
 
+/*###################################
+section5 - 미디어쿼리
+#####################################*/
+	#sec5 {
 
-	
+		width: calc(100% - 40px);
+		padding: 180px 0px;
 
+	}
+
+	#sec5 .sec5_card_wapper .sec5_card {
+
+		width: calc(100% - 18px);
+		height: 360px;
+
+	}
+
+
+	#sec5 .sec5_title {
+	/*	border: 1px solid red;*/
+		font-size: 1.8em;
+		text-align: center;
+		justify-content: center;
+		left: -5px;
+
+	}
+
+	#sec5 .sec5_card_wapper .sec5_card .sec5_card_title {
+		font-size: 1.5em;
+
+	}
+
+	#sec5 .sec5_card_wapper .sec5_card .sec5_card_seller {
+
+		line-height: 35px;
+		font-size: 0.9em;
+	}
+
+	#sec5 .sec5_card_wapper .sec5_card .sec5_card_seller .seller_img {
+		width: 35px;
+		height: 35px;
+		margin-right: 10px;
+	}
+
+	#sec5 .sec5_card_wapper .sec5_card .sec5_card_title span {
+		top: 300px;
+
+	}
+
+		#sec5 .sec5_card_wapper .sec5_card_hover {
+
+		width: calc(100% - 18px);
+		height: 360px;
+
+	}
+
+	#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(4) {
+			left: 0;
+			top: 692px;
+		}
+
+
+		#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(6) {
+			top: 1072px;
+
+		}
+
+		#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(8) {
+				left: 0;
+				top: 1452px;
+		}
+
+
+		.sec5_card_subimg {
+			display: none;
+		}
+
+		.sec5_close_btn {
+			background: url(img/ic_plus.png) no-repeat center/cover;
+			width: 33px;
+			height: 33px;
+			right: 40px;
+			top: 40px;	
+			position: absolute;
+			transform: rotate(45deg);
+		}
+
+
+
+		#sec5 .sec5_card_wapper .sec5_card {
+			cursor: default;
+		}
+
+		.sec5_close_btn, .sec5_open_btn {
+			cursor: pointer;
+		}
+
+
+		#sec5 .sec5_card_wapper .sec5_card:hover + #sec5 .sec5_card_wapper .sec5_card_hover {
+        opacity: 1;
+    }
 
 }
 
