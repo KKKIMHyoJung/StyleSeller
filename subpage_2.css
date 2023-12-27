@@ -1,0 +1,370 @@
+
+
+/*##################################
+font-family
+##################################*/
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Neo Bold'),
+    url('fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Bold.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 500;
+    src: local('Spoqa Han Sans Neo Medium'),
+    url('fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Medium.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Neo Regular'),
+    url('fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Regular.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Neo Light'),
+    url('fonts/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Light.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Neo Thin'),
+    url('fonts/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Thin.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	 font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+body {
+	background-color: #F8F9FA;
+}
+
+#wrapper{
+/*	border: 1px solid red;*/
+/*	width: 780px;*/
+	padding: 55px 28px 55px;
+	width: 640px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.top_img {
+	background: url(img/live_banner_bg.png) no-repeat center/cover;
+	width: 145px;
+	height: 126px;
+	background-size: 145px;
+	margin: 0 auto;
+}
+
+.text-title {
+/*	border: 1px solid red;*/
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.text-title p:nth-of-type(1) {
+	font-weight: bolder;
+	font-size: 2.5em;
+	margin-bottom: 30px;
+}
+
+.text-title p:nth-of-type(2) {
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.text-title p:nth-of-type(3) {
+	font-weight: bolder;
+	font-size: 18px;
+	color:  #A37BFF;
+}
+
+.textbox-1 {
+/*	border: 1px solid red;*/
+	width: 90%;
+	padding: 20px 15px;
+	background: #F8F9FA;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+
+.textbox-1 p:nth-of-type(1) {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+.textbox-1 p:nth-of-type(2) {
+	margin-bottom: 5px;
+
+}
+
+.textbox-1 p:nth-of-type(3) {
+	margin-bottom: 5px;
+
+
+}
+.textbox-1 p:nth-of-type(4) {
+	font-weight: bolder;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+
+
+.textbox-2 {
+/*	border: 1px solid red;*/
+	width: 90%;
+	padding: 20px 15px;
+	background: #A37BFF;
+	border-radius: 20px;
+	text-align: center;
+	margin: 20px auto;
+	color: white;
+}
+
+.textbox-2 p:nth-of-type(1) {
+	font-size: 1.7em;
+	font-weight: bolder;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+.textbox-2 p {
+	margin-bottom: 10px;
+	font-weight: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+#sec7	{
+	width: 100%;
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+mark {
+	background-color: #EFF531;
+	
+}
+
+
+#sec7	.sec7_box {
+/*	border: 1px solid blue;*/
+	width: 90%;
+	padding: 20px 20px;
+	margin: 0 10px;
+	overflow: hidden;
+}
+
+#sec7	.sec7_card_wrapper {
+/*	border: 1px solid red;*/
+	width: 4300px;
+	overflow: hidden;
+	display: flex;
+	padding: 20px 20px;
+	margin: 0 10%;
+	animation: movecard-sec7 15s linear infinite;
+	animation-play-state: running;
+	position: relative;
+}
+
+
+#sec7 .sec7_card {
+/*	border: 1px solid red;*/
+	box-sizing: border-box;
+	width: 400px;
+	min-width: 370px;
+	padding: 20px;
+	margin-right: 30px;
+/*	float: left;*/
+	display: block;
+	user-select: none;
+	box-shadow: 0 0 25px rgb(199 199 199 / 47%);
+	border-radius: 20px;
+	position: relative;
+}
+
+
+@keyframes movecard-sec7 {
+	0% {
+      left :0;
+  }
+  100% {
+      left: -2150px;
+  }
+}
+
+
+.sec7_card_title {
+	font-size: 1.2em;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+.sec7_card_content {
+	margin-bottom: 10px;
+}
+
+.sec7_card_writer {
+	color: #ab96fb;
+	text-align: right;
+	font-weight: bolder;
+}
+
+
+
+form {
+	margin-top: 30px;
+}
+
+form div {
+	margin-bottom: 20px;
+}
+
+.user-input {
+	margin-bottom: 40px;
+}
+
+.form-title {
+	font-size: 1.5em;
+	margin-right: 10px;
+	user-select: none;
+
+}
+
+.form-info {
+	font-size: 0.9em;
+	color: #FF2D55;
+	user-select: none;
+}
+
+input.insert-user-box {
+	outline: none;
+	border-bottom: 1px solid #CED4DA;
+	width: 100%;
+	border-width: 0 0 1px;
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+
+.radio-box input {
+	margin-right: 10px;
+}
+
+
+
+
+.info-title {
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+
+.info-grid-wrapper {
+	float: left;
+	width: 100%;
+}
+
+
+.info-grid{
+	margin-top: 20px;
+	border: 1px solid black;
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.info-grid div:nth-of-type(1) {
+	height: 5px;
+	line-height: 10px;
+	border-right: 0px solid black;
+}
+
+.info-grid div:nth-of-type(2) {
+	border-top: 1px solid black;
+	height: 30px;
+	padding-top: 5px;
+}
+
+.agree-btn {
+	margin-right: 20px;
+}
+
+button {
+	width: 100%;
+	height: 60px;
+	background-color: #ab96fb;
+	color: white;
+	font-size: 1.6em;
+	font-weight: bolder;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+	#wrapper{
+/*	border: 1px solid red;*/
+/*	width: 780px;*/
+	padding: 15px 28px 15px;
+	width: 400px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+
+.textbox-1 {
+	font-size: 14px;
+}
+
+.info-grid-wrapper {
+	font-size: 13px;
+}
+
+
+.text-title p:nth-of-type(2) {
+	font-size: 17px;
+}
+
+}

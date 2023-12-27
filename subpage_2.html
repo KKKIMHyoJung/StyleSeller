@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>라이브커머스신청</title>
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+	<link rel="stylesheet" href="subpage_2.css"/>
+
+	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<div id="wrapper">
+		
+		<div class="top_img"></div>
+
+
+		<div class="text-title">
+			<p>스타일셀러가 제안하는<br>라이브 커머스 성공 공식</p>
+			<p>인플루언서와 함께 성장해온 스타일셀러가</p>
+			<p>라이브 커머스의 새로운 표준을 제시합니다.</p>
+		</div>
+
+
+		<div class="textbox-1">
+			<p><mark>높은 방송 트래픽은 물론,<br>리뷰를 통한 구매 전환율을 높이는 라이브 커머스</mark></p>
+
+			<p>인플루언서, 크리에이터와 함게하는 차원 높은 라이브 커머스!</p>
+
+			<p>컨셉 기획부터 사전 마케팅, 라이브까지 이어지는</p>
+			<p>스타일셀러만의 확률 높은 라이브 커머스 성공 공식</p>
+		</div>
+
+
+<!-- 		<div class="textbox-2">
+			<p>Why Styleseller?</p>
+			<p>- 판매력이 있는 1만 명의 셀러 보유</p>
+			<p>- 자체 공구 플랫폼 및 결제 시스템 개발 및 운영</p>
+			<p>- 브랜드 직원들이 해야 할 관리 및 운영 업무 모두 지원</p>
+			<p>- 브랜드 및 제품에 적합한 SNS 셀러 추천</p>
+			<p>- 단기 공구 및 상시 공구 모두 운영 가능</p>
+			<p>- 플랫폼 이용료 및 통합 결제 시스템 무료 지원</p>
+		</div>
+
+ -->
+
+		<form action="subpage_1_submit" method="get" accept-charset="utf-8">
+
+			<div class="user-input">
+				<span class="form-title">필수 입력 정보</span>
+				<span class="form-info">* 필수입력</span>
+			</div>
+
+
+			<div class="user-input">
+				<span class="insert">회사이름</span>
+				<span class="form-info">*</span>
+				<div><input type="text" class="insert-user-box"></div>
+			</div>
+
+			<div class="user-input">
+				<span class="insert">브랜드명</span>
+				<span class="form-info">*</span>
+				<div><input type="text" class="insert-user-box"></div>
+			</div>
+
+			<div class="user-input">
+				<span class="insert">자사몰 또는 홈페이지</span>
+				<span class="form-info">*</span>
+				<div><input type="text" placeholder="http://~" class="insert-user-box"></div>
+			</div>
+			<div class="user-input">
+				<span class="insert">담당자 이름/직급</span>
+				<span class="form-info">*</span>
+				<div><input type="text" placeholder="홍길동/대리" class="insert-user-box"></div>
+			</div>
+
+			<div class="user-input">
+				<span class="insert">연락처/직통번호</span>
+				<span class="form-info">*</span>
+				<div><input type="text" placeholder="010-1234-5678" class="insert-user-box"></div>
+			</div>
+
+			<div class="user-input">
+				<span class="insert">이메일 주소</span>
+				<span class="form-info">*</span>
+				<div><input type="text" placeholder="styleseller@gmail.com" class="insert-user-box"></div>
+			</div>
+
+
+			<div class="radio-box user-input">
+				<p>
+					<span class="insert">취급 카테고리 (다중선택 가능)</span>
+					<span class="form-info">*</span>
+				</p>
+
+				<input type="checkbox" id="food" name="user_category" checked/><label for="food">푸드마켓</label>
+				<input type="checkbox" id="home" name="user_category"/><label for="home">홈데코</label>
+				<input type="checkbox" id="animal" name="user_category"/><label for="animal">반려동물</label>
+				<input type="checkbox" id="fitness" name="user_category"/><label for="fitness">피트니스</label>
+				<input type="checkbox" id="beauty" name="user_category"/><label for="beauty">뷰티</label>
+				<input type="checkbox" id="appliances" name="user_category"/><label for="appliances">소형가전</label>
+
+				<input type="checkbox" id="etc" name="user_category show"/><label for="etc">기타</label>
+				
+				<lable for="etc_text" class="hide">기타 카테고리 입력</lable>
+				<input type="text" id="etc_text" name="etc_text" class="option" placeholder="예) 의류/잡화" style="display:none; margin-top: -10px;"/>
+
+			</div>
+
+
+
+			<div class="personal-info">
+				
+				<div class="info-title">개인정보 수집 및 동의</div>
+
+
+				<p>㈜스타일셀러는 개인정보보호법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련 법령상의 개인정보보호 규정을 준수하며, 작성자의 개인정보 보호에 최선을 다하고 있습니다.<br/>
+				작성자의 개인정보는 별도로 관리되어 기본적으로 2년간 보유 및 이용됩니다.</p>
+
+				<div class="info-grid-wrapper">
+					<div class="info-grid">
+						<div>개인정보 수집 이용 목적</div>
+						<div>스타일 셀러 입점, 공동구매 정보안내</div>
+					</div>
+
+					<div class="info-grid">
+						<div>개인정보 항목</div>
+						<div>기업명, 브랜드명,<br>이름, 휴대전화번호, 이메일주소</div>
+					</div>
+				</div>
+
+
+				<input type="radio" class="agree-btn"><span>개인정보 수집에 동의합니다.</span>
+			</div>
+
+
+
+			<button>신청하기</button>
+
+
+		</form>
+
+
+
+	</div>
+
+
+	<script type="text/javascript" src="subpage_1.js"></script>
+
+
+
+</body>
+</html>
