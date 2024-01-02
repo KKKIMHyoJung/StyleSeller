@@ -1,0 +1,386 @@
+
+
+/*##################################
+font-family
+##################################*/
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Neo Bold'),
+    url('fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Bold.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 500;
+    src: local('Spoqa Han Sans Neo Medium'),
+    url('fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Medium.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Neo Regular'),
+    url('fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Regular.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Neo Light'),
+    url('fonts/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Light.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Neo Thin'),
+    url('fonts/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+    url('fonts/SpoqaHanSansNeo-Thin.woff') format('woff'),
+    url('fonts/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+}
+
+
+
+
+.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 24
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+		 font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+body, html {
+	width: 480px;
+	max-width: 480px;
+	margin: 0 auto;
+
+}
+
+
+.fons_style_none {
+	font-style: none;
+	color: black;
+}
+
+
+
+
+
+
+
+.bo {
+	border: 1px solid red;
+}
+
+#wrapper {
+	width: 100%;
+
+}
+
+
+
+
+#nav {
+	display: flex;
+	position: relative;
+	padding: 10px 0 0;
+}
+
+.nav_logo {
+
+	background: url(img/logo.png) no-repeat center/cover;
+	width: 110px;
+	height: 24px;
+}
+
+.nab_menu_1 {
+	display: flex;
+	position: relative;
+	left: 480px;
+	margin-left: -250px;
+}
+
+.nab_menu_1 div {
+	margin-left: 10px;
+}
+
+
+
+.link_1{
+	background: url(img/Top_banner_01.png);
+	width: 100%;
+	height: 50px;
+	margin-block: 10px;
+}
+
+
+
+.carousel {
+	overflow: hidden;
+}
+
+.carousel_img {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+
+.carousle_btn {
+
+	position: relative;
+	width: 100px;
+	height: 5px;
+	margin: 0 auto;
+	bottom: 20px;
+}
+
+.carousle_btn .btn {
+	width: 33.3333%;
+	height: 100%;
+/*	border: 1px solid white;*/
+box-sizing: border-box;
+background-color: white;
+float: left;
+display: block;
+cursor: pointer;
+}
+
+.btn_active {
+	background-color: black !important;
+}
+
+
+
+
+
+
+.item_categories {
+	margin: 10px 0;
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 1px solid #dee2e6;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.category {
+/*	border: 1px solid red;*/
+width: 16.666%;
+}
+
+
+
+
+.category>img{
+	width: 40px;
+	display: block;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.category>div {
+	font-size: 9px;
+	padding-top: 2px;
+	text-align: center;
+	color: #6F7983;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+#best_tiem {
+	width: 100%;
+	padding: 20px 0;
+}
+
+
+#best_tiem .title {
+	text-align: center;
+
+}
+
+
+#best_tiem .title  p {
+	margin-bottom: 10px;
+}
+
+#best_tiem .title  p:nth-of-type(1) {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#best_tiem .title  p:nth-of-type(2) {
+	font-size: 15px;
+	color: #6F7983;
+}
+
+
+
+
+.btn_group {
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	padding: 0 10px;
+}
+
+.btn_group .sort_btn, .btn_group .view_btn  {
+	display: flex;
+}
+
+
+.btn_group .sort_btn {
+	width: 60%;
+	margin-right: 20px;
+}
+
+
+.btn_group .sort_btn img {
+	width: 80px;
+	margin: 0px 3px;
+	cursor: pointer;
+}
+
+.btn_group .view_btn  {
+	width: 30%;
+	justify-content: right;
+
+}
+
+.btn_group .view_btn span {
+	font-size: 30px;
+	color: #6F7983;
+	margin: 5px 0 0 10px;
+	display: block;
+	cursor: pointer;
+}
+
+
+.btn_group .view_btn a {
+	text-decoration: none;
+}
+
+
+
+
+/* 각 view-btn 마다 달라질 부분! */
+
+.item-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.item-card .card {
+/*	border: 1px solid red;*/
+	width: calc(100% - 20px);
+	margin: 5px 5px 15px;
+	font-size: 13px;
+	
+}
+
+.item-card .card div {
+/*	border: 1px solid red;*/
+	float: left;
+}
+
+.card .item-img {
+	width: 30%;
+}
+
+.item-card .card img {
+	width: 100%;
+	border: 1px solid #ECEDEE;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.item-card .card .text_area {
+	width: 68%;
+	margin-left: 2%;
+}
+
+.card .item-title {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.item-card .card p {
+	margin-bottom: 3px;
+}
+
+.card .cancle-cost {
+	text-decoration: line-through;	
+	color: #aeb5bb;
+
+}
+
+.card .discount-percent {
+	color: #60676e;;
+}
+
+.final-cost {
+	font-size: 18px;
+}
+
+
+.card .refund {
+	color: #7551B1;
+}
+
+.card .material-symbols-outlined {
+
+	font-size: 18px;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 10px;
+	color: #aeb5bb;
+}
+
+
+.proceed-bound {
+	margin-top: 20px;
+	width: 100%;
+	height: 25px;
+	display: flex;
+}
+
+.proceed-bound .material-symbols-outlined {
+	margin-left: 20px;
+}
+
+.proceeds {
+	width: 100%;
+	text-align: center;
+	line-height: 25px;
+	font-weight: normal;
+	color: #6928ff;
+	background: rgba(163, 123, 255, 0.18);
+	border-radius: 5px;
+}
