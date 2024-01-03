@@ -304,4 +304,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+/* ##################################################
+스크롤테스트
+#####################################################*/
 
+
+
+
+
+$(window).scroll(function(){
+        // 스크롤이 페이지 하단에 도달하면
+      if ($(this).scrollTop() > 2000) {
+        $('.sec3_1st_img').fadeIn();        
+      } 
+    });

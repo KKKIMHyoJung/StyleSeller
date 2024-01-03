@@ -5,12 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>subpage-3</title>
 
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+
 	<link rel="stylesheet" href="subpage_3(3).css"/>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
-<body class="bo">
+<body>
 
 
 	<div id="wrapper">
@@ -42,27 +47,46 @@
 
 
 
-		<div class="carousel">
+		<div class="container px-0">
+			<div class="row">
+				<div class="col">
 
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/mainbanner_seller_recruit210.png" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="img/mainbanner_seller_recruit70.png" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="img/mainbanner_seller_recruit58.png" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</button>
+					</div>
 
-			<div class="carousel_img" id="carouselwarpper">
-				<div class="img1"><img src="img/mainbanner_seller_recruit210.png" alt=""></div>
-				<div class="img2"><img src="img/mainbanner_seller_recruit70.png" alt=""></div>
-				<div class="img3"><img src="img/mainbanner_seller_recruit58.png" alt=""></div>
+				</div>
 
 			</div>
-
-
-
-			<div class="carousle_btn">
-				<div class="btn btn_active" onclick="changeSlide(0)"></div>
-				<div class="btn" onclick="changeSlide(1)"></div>
-				<div class="btn" onclick="changeSlide(2)"></div>
-			</div>
-
-
 
 		</div>
+
+
+
+
 
 
 
@@ -162,17 +186,23 @@
 
 				<div class="view_btn">
 
-					
+
+
+
 					<div class="view_btn_1"><a href="subpage_3(1).html"><span class="material-symbols-outlined">
 						grid_view
-					</span></a></div>
+					</span></div>
 					<div class="view_btn_2"><a href="subpage_3(2).html"><span class="material-symbols-outlined">
 						view_sidebar
-					</span></a></div>
+					</span></div>
 					<div class="view_btn_3"><a href="subpage_3(3).html"><span class="material-symbols-outlined">
 						check_box_outline_blank
-					</span></a></div>
+					</span></div>
 
+
+					
+
+					
 				</div>
 
 
@@ -186,9 +216,9 @@
 
 		<div class="item-card">
 			
-			<div class="card">
+			<div class="cs-card" >
 				
-				<div class="item-img">
+				<div class="item-img" >
 					<img src="img/tqkfrifqjpurqz3nsf3s.jpg" alt="">
 				</div>
 
@@ -217,7 +247,7 @@
 			</div>
 
 
-			<div class="card">
+			<div class="cs-card">
 				
 				<div class="item-img"><img src="img/u7w2pgsjpqzqf9amplcq.jpg" alt=""></div>
 
@@ -247,7 +277,7 @@
 
 
 			
-			<div class="card">
+			<div class="cs-card">
 				
 				<div class="item-img">
 					<img src="img/deev5im2mvlsos0znvf6.jpg" alt="">
@@ -276,7 +306,7 @@
 			</div>
 
 
-			<div class="card">
+			<div class="cs-card">
 				
 				<div class="item-img"><img src="img/fqsjvdticiqslia6cmqt.png" alt=""></div>
 
@@ -300,38 +330,116 @@
 						</span>
 					</div>
 				</div>
-		</div>
+			</div>
+
+
+			<footer>
+
+
+				<p>
+					<a href="">이용약관</a> | 
+					<a href="">개인정보처리방침</a> | 
+					
+					<a href="https://www.styleseller.co.kr/partners/index.html?type=BRAND">입점 / 제휴 문의 ></a>
+				</p>
+
+
+				<p>주식회사 스타일셀러 | 대표 : 안성국</p>
+				<p>주소 : 서울특별시 서초구 강남대로 25길 33 남경빌딩 4층</p>
+				<p>사업자등록번호 : 313-86-00778 | 통신판매업신고 : 제2021-서울서초-3397호</p>
+				<p>상표등록 : 4-2014-069380-7 │ 특허출원 : 10-2015-0004631</p>
+				<p>벤처확인 : 제20150110012호</p>
+				<p>개인정보관리책임자 : 안시현 | 호스팅 제공자 : 아마존웹서비스</p>
+				<p>고객센터 : 02-2051-8858 | E-MAIL : cs-kr@styleseller.co.kr</p>
+				<p>고객센터 운영시간 : 평일 10:00 ~ 17:00(점심 13:00 ~ 14:00) 주말/공휴일 휴무</p>
+				<p>계좌안내 : KB 국민은행 787201-04-257450(예금주:주식회사 스타일셀러)</p>
+
+
+			</footer>
+
+
+
+			<nav id="nav2">
+				
+				<div class="nav2_menu">
+					<a href="">
+						<span class="material-symbols-outlined">
+							home
+						</span>
+						<p>스토어</p>
+					</a>
+				</div>
+
+
+				<div class="nav2_menu">
+					<a href="">
+						<span class="material-symbols-outlined">
+							star
+						</span>
+						<p>참여</p>
+					</a>
+				</div>
+
+
+
+				<div class="nav2_menu">
+
+					<a href=""><span class="material-symbols-outlined">
+						add_circle
+					</span>
+					<p>링크</p>
+				</a>
+			</div>
+
+
+			<div class="nav2_menu">
+
+				<a href="">
+					<span class="material-symbols-outlined">
+						payments
+					</span>
+
+					<p>수익금</p>
+
+				</a>
+
+			</div>
+
+
+			<div class="nav2_menu">
+				<a href="">
+					<span class="material-symbols-outlined">
+						person
+					</span>
+					<p>내 정보</p>
+				</a>
+			</div>
+
+
+		</nav>
 
 
 	</div>  <!--wrapper -->
 
 
 
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
 	<script>
-		let carouselContainer = document.getElementById('carouselwarpper');
-		let buttons = document.querySelectorAll(".btn");
-		let index = 0;
 
-		function changeSlide(newIndex) {
 
-			let transformValue = -newIndex * 100 + '%';
+		$('.carousel').carousel({
+			interval: 500
+			
+		});
 
-			carouselContainer.style.transform = 'translateX(' + transformValue + ')';
-
-			buttons[index].classList.remove("btn_active");
-
-			index = newIndex;
-
-			buttons[index].classList.add("btn_active");
-		}
-
-		setInterval(() => {
-			let newIndex = (index + 1) % buttons.length;
-			changeSlide(newIndex);
-		}, 3000);
 
 
 	</script>
+
 
 
 </body>

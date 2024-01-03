@@ -76,6 +76,12 @@ body, html {
 }
 
 
+body {
+	padding-bottom: 90px;
+}
+
+
+
 .fons_style_none {
 	font-style: none;
 	color: black;
@@ -100,9 +106,15 @@ body, html {
 
 
 #nav {
+	width: 480px;
+	margin: 0 auto;
 	display: flex;
-	position: relative;
-	padding: 10px 0 0;
+	position: fixed;
+	padding: 20px 0 10px;
+	border-bottom: 1px solid #dee2e6;
+	z-index: 99;
+	background-color: white;
+	top: 0;
 }
 
 .nav_logo {
@@ -129,7 +141,9 @@ body, html {
 	background: url(img/Top_banner_01.png);
 	width: 100%;
 	height: 50px;
-	margin-block: 10px;
+	margin-bottom: 70px;
+	position: relative;
+	top: 60px;
 }
 
 
@@ -255,7 +269,7 @@ width: 16.666%;
 
 .btn_group .sort_btn {
 	width: 60%;
-	margin-right: 20px;
+	margin-right: 40px;
 }
 
 
@@ -298,7 +312,7 @@ width: 16.666%;
 	cursor: pointer;
 }
 
-.item-card .card {
+.item-card .cs-card {
 /*	border: 1px solid red;*/
 	width: calc(100% - 20px);
 	margin: 5px 5px 15px;
@@ -306,56 +320,58 @@ width: 16.666%;
 	
 }
 
-.item-card .card div {
+.item-card .cs-card div {
 /*	border: 1px solid red;*/
 	float: left;
 }
 
-.card .item-img {
+.cs-card .item-img {
 	width: 100%;
 }
 
-.item-card .card img {
+.item-card .cs-card img {
 	width: 100%;
 	border: 1px solid #ECEDEE;
 	box-sizing: border-box;
 	border-radius: 5px;
 }
 
-.item-card .card .text_area {
+.item-card .cs-card .text_area {
 	width: 100%;
 
 }
 
-.card .item-title {
+.cs-card .item-title {
 	font-weight: normal;
 	font-size: 14px;
+	color: black;
 }
 
-.item-card .card p {
+.item-card .cs-card p {
 	margin-bottom: 3px;
 }
 
-.card .cancle-cost {
+.cs-card .cancle-cost {
 	text-decoration: line-through;	
 	color: #aeb5bb;
 
 }
 
-.card .discount-percent {
+.cs-card .discount-percent {
 	color: #60676e;;
 }
 
 .final-cost {
 	font-size: 18px;
+	color: black;
 }
 
 
-.card .refund {
+.cs-card .refund {
 	color: #7551B1;
 }
 
-.card .material-symbols-outlined {
+.cs-card .material-symbols-outlined {
 
 	font-size: 18px;
 	display: inline-block;
@@ -366,7 +382,7 @@ width: 16.666%;
 
 
 .proceed-bound {
-	margin-top: 20px;
+	margin: 10px 0;
 	width: 100%;
 	height: 25px;
 	display: flex;
@@ -384,4 +400,59 @@ width: 16.666%;
 	color: #6928ff;
 	background: rgba(163, 123, 255, 0.18);
 	border-radius: 5px;
+}
+
+
+
+
+footer {
+	width: 480px;
+	position: relative;
+	padding: 20px 10px;
+	margin-top: 20px;
+	border-top: 1px solid #dee2e6;
+	
+}
+
+
+footer p{
+	font-size: 10px;
+	margin-bottom: 3px;
+	
+}
+
+footer p a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+#nav2 {
+
+    display: flex;
+    border-top: 1px solid #dee2e6;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 480px;
+    background-color: white; 
+}
+
+
+.nav2_menu {
+	width: 20%;
+	text-align: center;
+	font-size: 12px;
+	display: block;
+	cursor: pointer;
+}
+
+.nav2_menu  a {
+	text-decoration: none;
+	color: #232323
+}
+
+.nav2_menu:nth-of-type(3) a, .nav2_menu:nth-of-type(3) p{
+	color: #6928ff;
 }
