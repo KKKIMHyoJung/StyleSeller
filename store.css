@@ -1,0 +1,73 @@
+
+body{
+	padding-bottom: 1000px;
+}
+
+.cs-font-13 {
+	font-size: 13px;
+}
+
+
+
+.cs-input-noneborder {
+	border: none;
+}
+
+.cs-input-noneborder:focus {
+	border-color: white;
+	outline: none;
+}
+
+
+.cs-search {
+	border: 1px solid purple;
+	width: 350px;
+	height: 40px;
+	border-radius: 5px;
+	padding-left: 5px;
+	user-select: none;
+	overflow: hidden;
+	line-height: 40px;
+}
+
+
+.cs-align-right {
+	align-content: right;
+}
+
+
+.cs-h320 {
+	height: 320px;
+}
+
+
+.cs-img-center {
+	margin: 0 auto;
+}
+
+
+.cs-bg-1 {
+	background-color: #252525;
+}
+
+
+.cs-bg-2 {
+	background-color: #141023;
+}
+
+
+.cs-bg-3 {
+	background-color: #f8c855;
+}
+
+
+
+
+
+.timerWrap .timerBox .settingTime { 
+	display: none;
+}
+.timerWrap .timerBox .countNumberWrap > span {
+	font-size: 30px;
+	font-weight: bold;
+}
