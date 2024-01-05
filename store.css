@@ -1,4 +1,9 @@
 
+html, body {
+  height: 100%;
+
+}
+
 body{
 	padding-bottom: 1000px;
 }
@@ -71,3 +76,63 @@ body{
 	font-size: 30px;
 	font-weight: bold;
 }
+
+
+.text-ani {
+	display: block;
+	animation: text-ani 0.5s infinite;
+}
+
+@keyframes text-ani {
+	0% {
+		transform: rotateX(0deg);
+	}
+	25% {
+		transform: rotateX(-40deg);
+	}
+	75% {
+		transform: rotateX(40deg);
+	}
+	100%{
+		transform: rotateX(-20deg);
+	}
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.cs-font-10 {
+	font-size: 12px;
+	text-align: center;
+
+}
+
+.banner {
+	background-color: #aa96fb;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 25px;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+}
+
+
+.cs-text-aqua {
+	color: #23E8CA;
+}
+
+
+
+
+
+
+
+/*####################################
+미디어쿼리
+####################################*/
+

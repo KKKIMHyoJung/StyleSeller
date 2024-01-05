@@ -8,7 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-
+	<link rel="stylesheet" href="fonts.css">
 	<link rel="stylesheet" href="store.css">
 
 	<title>index</title>
@@ -70,16 +70,18 @@
 
 				<div class="cs-search d-none d-md-block">
 					<input type="text" placeholder="검색어를 입력해주세요" class="cs-input-noneborder ">
-					<img src="img/search.png" alt="" width="40" class="float-right" >
+					<a href=""><img src="img/search.png" alt="" width="40" class="float-right" ></a>
 				</div>
 
 
 				<div class="d-flex">
 					
-					<img src="img/map.png" alt="" width="40" class="mr-2" height="40">
-					<img src="img/cart.png" alt="" width="40" class="mr-2" height="40">
-					<img src="img/heart.png" alt="" width="40" height="40">
+					<a href=""><img src="img/map.png" alt="" width="40" class="mr-2" height="40"></a>
+					<a href=""><img src="img/cart.png" alt="" width="40" class="mr-2" height="40"></a>
+					<a href=""><img src="img/heart.png" alt="" width="40" height="40" class="mr-2"></a>
 
+					<!-- 적당한 이모티콘 삽입 -> 로그인 관련  -->
+					<a href=""><img src="img/user.png" alt="" width="30" height="30" class="d-md-none d-sm-block mt-1"></a>
 				</div>
 
 
@@ -92,9 +94,9 @@
 
 
 		<div class="row">
-			<div class="col p-0 pt-3">
+			<div class="col p-0">
 
-				<nav class="navbar navbar-expand-lg">
+				<nav class="navbar navbar-expand-md">
 
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -104,25 +106,29 @@
 									카테고리
 								</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Best</a>
+									<a class="dropdown-item" href="#">New</a>
+									<a class="dropdown-item" href="#">핫아이템</a>
+									<a class="dropdown-item" href="#">수익률UP</a>
+									<a class="dropdown-item" href="#">홈리빙/가전</a>
+									<a class="dropdown-item" href="#">맘앤키즈</a>						
+									<a class="dropdown-item" href="#">이너뷰티/건강</a>
+									<a class="dropdown-item" href="#">히든아이템</a>												
 								</div>
 							</li>
 						</ul>
 
-						<ul class="navbar-nav mr-auto ">	
-							<li class="nav-item active mr-4 ml-4">
+						<ul class="navbar-nav mr-auto">	
+							<li class="nav-item active mr-5 ml-5">
 								<a class="nav-link text-dark font-weight-bold" href="#">신상품 <span class="sr-only text-dark">(current)</span></a>
 							</li>
-							<li class="nav-item mr-4 ml-4">
+							<li class="nav-item mr-5 ml-5">
 								<a class="nav-link text-dark font-weight-bold" href="#">베스트</a>
 							</li>
-							<li class="nav-item active mr-4 ml-4">
+							<li class="nav-item active mr-5 ml-5">
 								<a class="nav-link text-dark font-weight-bold" href="#">알뜰쇼핑<span class="sr-only">(current)</span></a>
 							</li>
-							<li class="nav-item mr-4 ml-4">
+							<li class="nav-item mr-5 ml-5">
 								<a class="nav-link text-dark font-weight-bold" href="#">특가/혜택</a>
 							</li>
 
@@ -176,10 +182,90 @@
 
 	</div>
 
+
+
+
 </div>
 
 
+
 <div class="container">
+
+
+	<!-- sm 화면시 카테고리 보이기 -->
+
+	<div class="row d-md-none p-2 mt-3 mb-5">
+		<div class="col-1"></div>
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_best_22.png" alt="" width="100%">
+				<div class="cs-font-10">BEST</div>
+			</a>
+		</div>
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_new_111.png" alt="" width="100%">
+				<div class="cs-font-10">NEW</div>
+			</a>
+		</div>
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_winter_1.png" alt="" width="100%">
+				<div class="cs-font-10">핫아이템</div>
+			</a>
+		</div>
+
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_revenue_11111.png" alt="" width="100%">
+				<div class="cs-font-10">수익률UP</div>
+			</a>
+		</div>
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_living_111.png" alt="" width="100%">
+				<div class="cs-font-10">홈리빙</div>
+			</a>
+		</div>
+		<div class="col-1"></div>
+		<div class="col-1"></div>
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_kids_111.png" alt="" width="100%">
+				<div class="cs-font-10">맘앤키즈</div>
+			</a>
+		</div>
+
+
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_food_1111.png" alt=""  width="100%">
+				<div class="cs-font-10">푸드</div>
+			</a>
+		</div>
+
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_style_111.png" alt=""  width="100%">
+				<div class="cs-font-10">스타일</div>
+			</a>
+		</div>
+		<div class="col-2">
+			<a href="">
+				<img src="img/ct_innerB_111.png" alt=""  width="100%">
+				<div class="cs-font-10">건강</div>
+			</a>
+		</div>
+
+		<div class="col-2">
+			<a href="">
+				<img src="img/ic_pet_new2_off.png" alt=""  width="100%">
+				<div class="cs-font-10">반려동물</div>
+			</a>
+		</div>
+		<div class="col-1"></div>
+	</div>
+
 	<div class="row">
 		<div class="col mt-5 mb-3">
 			<h2 class="text-center">지금 가장 많이 담는 특가!</h2>
@@ -190,8 +276,8 @@
 
 	<div class="row">
 		
-		<div class="col-lg-4 col-md-6 col-sm-6">
-			<img src="img/u7w2pgsjpqzqf9amplcq.jpg" alt="" width="100%">
+		<div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+			<img src="img/rkvgn0albrh9alj8yw8d.jpg" alt="" width="100%">
 			
 			<span class="item-title">본부놀면뭐하니-떡볶이 밀키트(2~3인용)</span>
 			<br>
@@ -201,8 +287,8 @@
 		</div>
 
 
-		<div class="col-lg-4 col-md-6 col-sm-6">
-			<img src="img/u7w2pgsjpqzqf9amplcq.jpg" alt="" width="100%">
+		<div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+			<img src="img/tqkfrifqjpurqz3nsf3s.jpg" alt="" width="100%">
 			
 			<span class="item-title">본부놀면뭐하니-떡볶이 밀키트(2~3인용)</span>
 			<br>
@@ -212,8 +298,41 @@
 		</div>
 
 
-		<div class="col-lg-4 col-md-6 col-sm-6">
-			<img src="img/u7w2pgsjpqzqf9amplcq.jpg" alt="" width="100%">
+		<div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+			<img src="img/fqsjvdticiqslia6cmqt.png" alt="" width="100%">
+			
+			<span class="item-title">본부놀면뭐하니-떡볶이 밀키트(2~3인용)</span>
+			<br>
+			<span class="item-cost">14,900원</span>
+
+			<div class="add_btn">담기</div>
+		</div>
+
+
+		<div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+			<img src="img/deev5im2mvlsos0znvf6.jpg" alt="" width="100%">
+			
+			<span class="item-title">본부놀면뭐하니-떡볶이 밀키트(2~3인용)</span>
+			<br>
+			<span class="item-cost">14,900원</span>
+
+			<div class="add_btn">담기</div>
+		</div>
+
+
+		<div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+			<img src="img/crdp0zbe1avlnulxfbko.jpg" alt="" width="100%">
+			
+			<span class="item-title">사과</span>
+			<br>
+			<span class="item-cost">14,900원</span>
+
+			<div class="add_btn">담기</div>
+		</div>
+
+
+		<div class="col-lg-4 col-md-6 col-sm-6 col-6 mb-4">
+			<img src="img/tourdmye4ahyhm9hojlq.jpg" alt="" width="100%">
 			
 			<span class="item-title">본부놀면뭐하니-떡볶이 밀키트(2~3인용)</span>
 			<br>
@@ -229,7 +348,7 @@
 
 	<div class="row mt-5">
 		
-		<div class="col-lg-3 col-md-12 mt-3">
+		<div class="col-lg-4 col-md-12 mt-3">
 			
 			<h4>새해맞이 특가 혜택 OPEN!</h4>
 			<span>스타일셀러만의 특별한 1월 혜택 😉</span>
@@ -240,7 +359,7 @@
 				<div class="timerBox">
 					<!-- settingTime의 원하는 날짜/시간 입력 -->
 					<div class="settingTime">january 31, 2024, 00:00:00</div>
-					<div class="countNumberWrap"> 
+					<div class="countNumberWrap mt-3"> 
 						<span>⏰</span>
 						<span class="d-day-day">
 						</span> 
@@ -257,13 +376,13 @@
 
 
 
-			<span>망설이면 늦어요!</span>
+			<span class="text-ani mt-3">망설이면 늦어요!</span>
 
 
 		</div>
 
 
-		<div class="col-lg-3 col-md-6 mt-3">
+		<div class="col-lg-4 col-md-6 mt-3 col-6">
 			
 			<img src="img/u7w2pgsjpqzqf9amplcq.jpg" alt="" width="100%">
 			
@@ -276,22 +395,9 @@
 		</div>
 
 
-		<div class="col-lg-3 col-md-6 mt-3">
+		<div class="col-lg-4 col-md-6 mt-3 col-6">
 			
-			<img src="img/u7w2pgsjpqzqf9amplcq.jpg" alt=""width="100%">
-			
-			<span class="item-title">본부놀면뭐하니-떡볶이 밀키트(2~3인용)</span>
-			<br>
-			<span class="item-cost">14,900원</span>
-
-			<div class="add_btn">담기</div>
-			
-		</div>
-
-
-		<div class="col-lg-3 col-md-6 mt-3">
-			
-			<img src="img/u7w2pgsjpqzqf9amplcq.jpg" alt=""width="100%">
+			<img src="img/t7r2w3za43ibnhsneiaa.jpg" alt=""width="100%">
 			
 			<span class="item-title">본부놀면뭐하니-떡볶이 밀키트(2~3인용)</span>
 			<br>
@@ -300,10 +406,96 @@
 			<div class="add_btn">담기</div>
 			
 		</div>
+
+
+
+
+	</div>
+
+	<div class="row banner mt-5">
+		<a href="#">
+			<div class="col-12" >
+				<span class="text-white">최저가를 넘어!</span>
+				<span class="cs-text-aqua">초.저.가. 구매 방법</span>
+				<span>👆</span>
+			</div>
+		</a>
+	</div>
+
+
+
+	<div class="row mt-5">
+		<div class="col-5 col-sm-3 col-lg-2">
+			<h4>뷰티 특가 ✨</h4>
+			<div class="timerBox">
+				<!-- settingTime의 원하는 날짜/시간 입력 -->
+				<div class="settingTime d-none">january 31, 2024, 00:00:00</div>
+				<div class="countNumberWrap mt-3">
+					<span class="mr-2">남은 시간!</span>
+					<br>
+					<span class="d-day-day">
+					</span> 
+					<span class="d-day-hour">
+					</span> 
+					<span class="d-day-min">
+					</span> 
+					<span class="d-day-sec">
+					</span>
+
+				</div>
+				<p class="d-none d-md-block mt-3">놓치면 안되는 뷰티 특가 아이템 놓치지마세요!</p>
+			</div>
+
+		</div>
+		<div class="col-7 col-sm-9 col-lg-10">
+			<img src="img/beauty_item.jpg" alt="" width="100%">
+			<div class="d-none d-sm-block">
+
+				<div class="row">
+
+					<div class="col-sm-7">
+						<span>[아멜리] 컴플리먼트 시리즈 톤업 선 보라</span>
+						<br>
+						<span>9,900원</span>						
+					</div>
+
+					<div class="col-sm-5">
+						<div class="add_btn">담기</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="col-12">
+			
+			<div class="d-sm-none">
+				<span>[아멜리] 컴플리먼트 시리즈 톤업 선 보라</span>
+				<span>9,900원</span>
+				<div class="add_btn">담기</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="row mt-5">
+		<div class="col-12 mt- text-center">
+			<h2>셀러들의 생생한 후기</h2>
+
+		</div>
+
 
 	</div>
 
 </div>
+
 
 
 
@@ -350,7 +542,7 @@
         if(diffSec<=0){ diffSec = '00'; }
 
         if(nodayHour>=100){
-        	document.querySelectorAll('.d-day-day')[i].innerText = diffDay +':';
+        	document.querySelectorAll('.d-day-day')[i].innerText = diffDay +'일';
         	document.querySelectorAll('.d-day-hour')[i].innerText = diffHour +':';
         	document.querySelectorAll('.d-day-min')[i].innerText = diffMin +':';
         	document.querySelectorAll('.d-day-sec')[i].innerText = diffSec;
