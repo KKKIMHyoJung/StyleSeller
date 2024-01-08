@@ -57,7 +57,10 @@ font-family
 
 *{margin: 0; padding: 0; font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
 
-html, body { width: 100%;}
+html, body { 
+
+	overflow-x: hidden;
+}
 
 #wrapper { width: 100%;
 	position: relative;}
