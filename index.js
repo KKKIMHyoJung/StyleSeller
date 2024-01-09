@@ -318,3 +318,29 @@ $(window).scroll(function(){
         $('.sec3_1st_img').fadeIn();        
       } 
     });
+
+
+
+
+
+
+
+
+function graph_ani() {
+    var scroll_po_graph = $(window).scrollTop();
+    var scrollPosition_graph = $('#sec6').offset().top;
+
+    if (scroll_po_graph >= scrollPosition_graph) {
+        $("#sec6 .graph-section:nth-of-type(2) .graph-grid .graph-bar:nth-of-type(1) .inner-bar").css("animation-play-state", "running");
+        $("#sec6 .graph-section:nth-of-type(2) .graph-grid .graph-bar:nth-of-type(2) .inner-bar").css("animation-play-state", "running");
+        $("#sec6 .graph-section:nth-of-type(2) .graph-grid .graph-bar:nth-of-type(3) .inner-bar").css("animation-play-state", "running");
+        $("#sec6 .graph-section:nth-of-type(3) .graph-grid .graph-bar:nth-of-type(1) .inner-bar").css("animation-play-state", "running");
+        $("#sec6 .graph-section:nth-of-type(3) .graph-grid .graph-bar:nth-of-type(2) .inner-bar").css("animation-play-state", "running");
+        $("#sec6 .graph-section:nth-of-type(3) .graph-grid .graph-bar:nth-of-type(3) .inner-bar").css("animation-play-state", "running");
+    }
+}
+
+
+$(window).scroll(function () {
+    graph_ani();
+});

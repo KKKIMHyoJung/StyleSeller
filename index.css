@@ -1251,7 +1251,9 @@ sec3 - #sec3img
 	width: 100%;
 	height: 575px;
 	background: #faf9ff;
-	
+	overflow: hidden;
+	display: flex;
+
 }
 
 #sec6 .graph-section .graph-grid .graph-bar {
@@ -1259,9 +1261,9 @@ sec3 - #sec3img
 	box-sizing: border-box;
 	width: 33.3333%;
 	height: 575px;
-	float: left;
-	margin: 0 auto;
-/*	margin-left: 5px;*/
+/*	position: relative;*/
+	display: flex;
+	justify-content: center;
 }
 
 
@@ -1283,6 +1285,7 @@ sec3 - #sec3img
 
 	background: linear-gradient(180deg, #d3e2ff 0%, rgba(211, 226, 255, 0.1) 80.49%), #fffcfb;
 	animation: graph-grow-1 1s;
+	animation-play-state: paused;
 }
 
 
@@ -1297,6 +1300,7 @@ sec3 - #sec3img
 	height: 71%;
 	background: linear-gradient(180deg, #bec1ff 0%, rgba(190, 193, 255, 0.1) 81.25%), #fffcfb;
 	animation: graph-grow-2 1s;
+	animation-play-state: paused;
 }
 
 
@@ -1310,6 +1314,7 @@ sec3 - #sec3img
 	height: 55%;
 	background: linear-gradient(180deg, #dbd8ff 0%, rgba(219, 216, 255, 0.1) 100%), #fffcfb;
 	animation: graph-grow-3 1s;
+	animation-play-state: paused;
 }
 
 
@@ -1323,6 +1328,7 @@ sec3 - #sec3img
 	height: 111%;
 	background: linear-gradient(180deg, #aa96fb 4.49%, rgba(170, 150, 251, 0.05) 100%), #fffcfb;
 	animation: graph-grow-4 1s;
+	animation-play-state: paused;
 }
 
 
@@ -1335,6 +1341,7 @@ sec3 - #sec3img
 	height: 131%;
 	background: linear-gradient(180deg, #e5d1ff 3.55%, rgba(229, 209, 255, 0.1) 100%), #fffcfb;
 	animation: graph-grow-5 1s;
+	animation-play-state: paused;
 }
 
 
@@ -1348,6 +1355,7 @@ sec3 - #sec3img
 	height: 80%;
 	background: linear-gradient(180deg, #d6cdff 0%, rgba(214, 205, 255, 0.1) 82.11%), #fffcfb;
 	animation: graph-grow-6 1s;
+	animation-play-state: paused;
 }
 
 @keyframes graph-grow-6 {
@@ -2217,9 +2225,8 @@ height: 365px;
   }
 
 #sec6 .graph-section .graph-grid .graph-bar .inner-bar {
-
 	width: 60px;
-
+	
 }
 
 
