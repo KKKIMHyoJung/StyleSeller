@@ -1,7 +1,11 @@
 
 body {
-
+	overflow-x: hidden;
+	padding-top: 40px;
+	padding-bottom: 50px;
 }
+
+
 
 
 .material-symbols-outlined {
@@ -31,6 +35,9 @@ body {
 }
 
 
+.cs-flex {
+	display: flex;
+}
 
 
 
@@ -128,3 +135,146 @@ input:focus {
 	display: flex;
 }
 
+
+
+
+.agree_all_btn span::after {
+	content: "✓";
+	cursor: pointer;
+}
+
+.agree_all_btn_2 span::after {
+	content: "✓";
+	cursor: pointer;
+	color: black;
+}
+
+input[type="checkbox"]:focus {
+	outline: none;
+}
+
+input[type="checkbox"] {
+	display: none;
+/*	height: 20px;
+	width: 20px;
+	margin-right: 10px;*/
+}
+
+input[type="checkbox"] + label {
+	cursor: pointer;
+}
+
+
+input[type="checkbox"] + label:before {
+	content: "✔";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #ced4da;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #ced4da;
+	color: white;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content:"✔";
+  background-color:#A37BFF;
+  border-color:#A37BFF;
+  color: white;
+  display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 10px;
+
+}
+
+
+
+
+
+
+
+/*nav*/
+
+
+#nav {
+	width: 480px;
+	margin: 0 auto;
+	display: flex;
+	position: fixed;
+	padding: 20px 0 10px;
+	border-bottom: 1px solid #dee2e6;
+	z-index: 99;
+	background-color: white;
+	top: 0;
+
+}
+
+.nav_logo {
+
+	background: url(img/logo.png) no-repeat center/cover;
+	width: 110px;
+	height: 24px;
+}
+
+.nab_menu_1 {
+	display: flex;
+	position: relative;
+	left: 480px;
+	margin-left: -250px;
+}
+
+.nab_menu_1 div {
+	margin-left: 10px;
+}
+
+
+
+.link_1{
+	background: url(img/Top_banner_01.png) no-repeat;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 70px;
+	position: relative;
+	top: 60px;
+}
+
+
+
+.nav-icon {
+	color: black;
+}
+
+
+
+
+
+
+#nav2 {
+	display: flex;
+	border-top: 1px solid #dee2e6;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	width: 480px;
+	background-color: white; 
+}
+
+
+.nav2_menu {
+	width: 20%;
+	text-align: center;
+	font-size: 12px;
+	display: block;
+	cursor: pointer;
+}
+
+.nav2_menu  a {
+	text-decoration: none;
+	color: #232323
+}
+
+.nav2_menu:nth-of-type(3) a, .nav2_menu:nth-of-type(3) p{
+	color: #6928ff;
+}

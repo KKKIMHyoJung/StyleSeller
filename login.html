@@ -27,6 +27,28 @@
 	<div id="wrapper">
 		
 
+
+		<div id="nav">
+
+			<div class="nav_logo"></div>
+			<div class="nab_menu_1">
+				<div><a href="" class="search fons_style_none "><span class="material-symbols-outlined nav-icon">
+					search
+				</span></a></div>
+				<div><a href="" class="cart fons_style_none"><span class="material-symbols-outlined nav-icon">
+					shopping_cart
+				</span></a></div>
+				<div><a href="" class="personal fons_style_none "><span class="material-symbols-outlined nav-icon">
+					person
+				</span></a></div>
+				<div><a href="" class="cust_service fons_style_none "><span class="material-symbols-outlined nav-icon">
+					support_agent
+				</span></a></div>
+			</div>
+
+			
+		</div>
+
 		<div class="header">
 
 			<h2>반갑습니다 :)</h2>
@@ -39,7 +61,7 @@
 		
 
 
-		<form action="">
+		<form action="" name="frm">
 
 
 			<div class="sub_title"><p>개인정보 <span class="cs-text-red">*</span></p></div>
@@ -71,54 +93,97 @@
 
 
 
-
-
 		<div class="check">
 
 			<div class="sub_title"><p>약관 동의 <span class="cs-text-red">*</span></p></div>
 
+			<h5 class="cs-flex">
+				<input type="checkbox" id="agree1" value="selectall" onclick="selectAll(this)" name="agree1">
+				<label for="agree1">모두 동의 합니다.</label>
+			</h5>
+		
+
+			<h6 class="cs-flex">
+				<input type="checkbox" id="agree2" name="agree2">
+				<label for="agree2">이용 약관 동의 (필수)</label>
+			</h6>
 
 
-			<div class="agree_all">
-				<div class="agree_all_btn">
-					<span class="material-symbols-outlined">
-						done
-					</span>
-				</div>
+			<h6 class="cs-flex">
+				<input type="checkbox" id="agree3" name="agree3">
+				<label for="agree3">개인 정보 처리 방침 동의 (필수)</label>
+			</h6>
 
-				<h5>모두 동의 합니다.</h5>
-			</div>
-
-			<div class="agree_1">
-				<div class="agree_all_btn">
-					<span class="material-symbols-outlined">
-						done
-					</span>
-				</div>
-
-				<h6>이용 약관 동의 (필수)</h6>
-				<a href="#"><span></span></a>
-			</div>
-
-			<div class="agree_2">
-				<div class="agree_all_btn">
-					<span class="material-symbols-outlined">
-						done
-					</span>
-				</div>
-
-				<h6>개인 정보 처리 방침 동의 (필수)</h6>
-				<a href="#"><span></span></a>
-			</div>
-
-			<input type="submit" value="가입하기" id="submit_btn">
+			<input type="submit" value="가입하기" id="submit_btn" onclick="checkForm()">
 
 		</div>
+
+		<nav id="nav2">
+			
+			<div class="nav2_menu">
+				<a href="">
+					<span class="material-symbols-outlined">
+						home
+					</span>
+					<p>스토어</p>
+				</a>
+			</div>
+
+
+			<div class="nav2_menu">
+				<a href="">
+					<span class="material-symbols-outlined">
+						star
+					</span>
+					<p>참여</p>
+				</a>
+			</div>
+
+
+
+			<div class="nav2_menu">
+
+				<a href=""><span class="material-symbols-outlined">
+					add_circle
+				</span>
+				<p>링크</p>
+			</a>
+
+		</div>
+
+
+		<div class="nav2_menu">
+
+			<a href="">
+				<span class="material-symbols-outlined">
+					payments
+				</span>
+
+				<p>수익금</p>
+
+			</a>
+
+		</div>
+
+
+		<div class="nav2_menu">
+			<a href="">
+				<span class="material-symbols-outlined">
+					person
+				</span>
+				<p>내 정보</p>
+			</a>
+		</div>
+
+
+	</nav>
 
 
 	</div>
 
 
+
+	<script src="login.js"></script>
 
 
 </body>
