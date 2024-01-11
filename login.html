@@ -9,7 +9,6 @@
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-
 	<link rel="stylesheet" href="login.css">
 	<link rel="stylesheet" href="fonts.css">
 
@@ -27,163 +26,208 @@
 	<div id="wrapper">
 		
 
+		<div id="section1">
 
-		<div id="nav">
+			<div id="nav-big">
 
-			<div class="nav_logo"></div>
-			<div class="nab_menu_1">
-				<div><a href="" class="search fons_style_none "><span class="material-symbols-outlined nav-icon">
-					search
-				</span></a></div>
-				<div><a href="" class="cart fons_style_none"><span class="material-symbols-outlined nav-icon">
-					shopping_cart
-				</span></a></div>
-				<div><a href="" class="personal fons_style_none "><span class="material-symbols-outlined nav-icon">
-					person
-				</span></a></div>
-				<div><a href="" class="cust_service fons_style_none "><span class="material-symbols-outlined nav-icon">
-					support_agent
-				</span></a></div>
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+
+				<ul>
+					
+					<li class="hover-li"><a href="store.html" class="nav-big-a">스토어</a></li>
+					<li class="hover-li"><a href="#" class="nav-big-a">참여</a></li>
+					<li class="hover-li"><a href="#" class="nav-big-a">링크</a></li>
+					<li class="hover-li"><a href="#" class="nav-big-a">수익금</a></li>
+					<li class="hover-li"><a href="#" class="nav-big-a">내정보</a></li>
+
+				</ul>
+
+
+				
+				<img src="img/banner_bg.png" alt="" width="100%" class="hover-img">
+				<img src="img/02_1b.png" alt="" width="80%" class="hover-img">
+				<img src="img/slide3.jpg" alt="" width="80%" class="hover-img">
+				<img src="img/slide4.jpg" alt="" width="80%" class="hover-img">
+
+
+
+
+			</div>			
+
+
+		</div>
+
+
+
+		<div id="section2">
+
+			<div id="nav">
+
+				<div class="nav_logo"></div>
+				<div class="nab_menu_1">
+					<div><a href="" class="search fons_style_none "><span class="material-symbols-outlined nav-icon">
+						search
+					</span></a></div>
+					<div><a href="" class="cart fons_style_none"><span class="material-symbols-outlined nav-icon">
+						shopping_cart
+					</span></a></div>
+					<div><a href="" class="personal fons_style_none "><span class="material-symbols-outlined nav-icon">
+						person
+					</span></a></div>
+					<div><a href="" class="cust_service fons_style_none "><span class="material-symbols-outlined nav-icon">
+						support_agent
+					</span></a></div>
+				</div>
+
+
 			</div>
 
-			
-		</div>
+			<div class="header">
 
-		<div class="header">
+				<h2>반갑습니다 :)</h2>
+				<h2>스타일셀러입니다.</h2>
 
-			<h2>반갑습니다 :)</h2>
-			<h2>스타일셀러입니다.</h2>
-
-		</div>
-
-
-
-		
-
-
-		<form action="" name="frm">
-
-
-			<div class="sub_title"><p>개인정보 <span class="cs-text-red">*</span></p></div>
-
-			<p><input type="text" placeholder="아이디(이메일)" name="id"></p>
-
-			<p><input type="text" placeholder="비밀번호" name="pw"></p>
-			<p><input type="text" placeholder="비밀번호 확인" name="pw_check"></p>
-
-
-			<p><input type="text" placeholder="이름 (반드시 실명으로 기입)" name="name"></p>
-
-			<p><input type="text" placeholder="휴대폰 번호 (숫자만 입력)" name="phone"></p>
-
-
-
-
-			<div class="sub_title"><p>추가정보 (선택)</p></div>
-
-			<div class="insta">
-				<div class="insta_adrr">http://instagram.com/</div>
-				<p><input type="text" placeholder="인스타그램 아이디" name="instaID"></p>
 			</div>
 
-			<p><input type="text" placeholder="추천인 (스타일셀러 아이디, SNS계정 등)" name="recommend"></p>
-
-
-		</form>
 
 
 
-		<div class="check">
-
-			<div class="sub_title"><p>약관 동의 <span class="cs-text-red">*</span></p></div>
-
-			<h5 class="cs-flex">
-				<input type="checkbox" id="agree1" value="selectall" onclick="selectAll(this)" name="agree1">
-				<label for="agree1">모두 동의 합니다.</label>
-			</h5>
-		
-
-			<h6 class="cs-flex">
-				<input type="checkbox" id="agree2" name="agree2">
-				<label for="agree2">이용 약관 동의 (필수)</label>
-			</h6>
 
 
-			<h6 class="cs-flex">
-				<input type="checkbox" id="agree3" name="agree3">
-				<label for="agree3">개인 정보 처리 방침 동의 (필수)</label>
-			</h6>
+			<form action="" name="frm">
 
-			<input type="submit" value="가입하기" id="submit_btn" onclick="checkForm()">
 
-		</div>
+				<div class="sub_title"><p>개인정보 <span class="cs-text-red">*</span></p></div>
 
-		<nav id="nav2">
-			
+				<p><input type="text" placeholder="아이디(이메일)" name="id"></p>
+
+				<p><input type="text" placeholder="비밀번호" name="pw"></p>
+				<p><input type="text" placeholder="비밀번호 확인" name="pw_check"></p>
+
+
+				<p><input type="text" placeholder="이름 (반드시 실명으로 기입)" name="name"></p>
+
+				<p><input type="text" placeholder="휴대폰 번호 (숫자만 입력)" name="phone"></p>
+
+
+
+
+				<div class="sub_title"><p>추가정보 (선택)</p></div>
+
+				<div class="insta">
+					<div class="insta_adrr">http://instagram.com/</div>
+					<p><input type="text" placeholder="인스타그램 아이디" name="instaID"></p>
+				</div>
+
+				<p><input type="text" placeholder="추천인 (스타일셀러 아이디, SNS계정 등)" name="recommend"></p>
+
+
+			</form>
+
+
+
+			<div class="check">
+
+				<div class="sub_title"><p>약관 동의 <span class="cs-text-red">*</span></p></div>
+
+				<h5 class="cs-flex">
+					<input type="checkbox" id="agree1" value="selectall" onclick="selectAll(this)" name="agree1">
+					<label for="agree1">모두 동의 합니다.</label>
+				</h5>
+
+
+				<h6 class="cs-flex">
+					<input type="checkbox" id="agree2" name="agree2">
+					<label for="agree2">이용 약관 동의 (필수)</label>
+				</h6>
+
+
+				<h6 class="cs-flex">
+					<input type="checkbox" id="agree3" name="agree3">
+					<label for="agree3">개인 정보 처리 방침 동의 (필수)</label>
+				</h6>
+
+				<input type="submit" value="가입하기" id="submit_btn" onclick="checkForm()">
+
+			</div>
+
+			<nav id="nav2">
+
+				<div class="nav2_menu">
+					<a href="">
+						<span class="material-symbols-outlined">
+							home
+						</span>
+						<p>스토어</p>
+					</a>
+				</div>
+
+
+				<div class="nav2_menu">
+					<a href="">
+						<span class="material-symbols-outlined">
+							star
+						</span>
+						<p>참여</p>
+					</a>
+				</div>
+
+
+
+				<div class="nav2_menu">
+
+					<a href=""><span class="material-symbols-outlined">
+						add_circle
+					</span>
+					<p>링크</p>
+				</a>
+
+			</div>
+
+
+			<div class="nav2_menu">
+
+				<a href="">
+					<span class="material-symbols-outlined">
+						payments
+					</span>
+
+					<p>수익금</p>
+
+				</a>
+
+			</div>
+
+
 			<div class="nav2_menu">
 				<a href="">
 					<span class="material-symbols-outlined">
-						home
+						person
 					</span>
-					<p>스토어</p>
+					<p>내 정보</p>
 				</a>
 			</div>
 
 
-			<div class="nav2_menu">
-				<a href="">
-					<span class="material-symbols-outlined">
-						star
-					</span>
-					<p>참여</p>
-				</a>
-			</div>
-
-
-
-			<div class="nav2_menu">
-
-				<a href=""><span class="material-symbols-outlined">
-					add_circle
-				</span>
-				<p>링크</p>
-			</a>
-
-		</div>
-
-
-		<div class="nav2_menu">
-
-			<a href="">
-				<span class="material-symbols-outlined">
-					payments
-				</span>
-
-				<p>수익금</p>
-
-			</a>
-
-		</div>
-
-
-		<div class="nav2_menu">
-			<a href="">
-				<span class="material-symbols-outlined">
-					person
-				</span>
-				<p>내 정보</p>
-			</a>
-		</div>
-
-
-	</nav>
-
+		</nav>
 
 	</div>
+</div>
 
 
 
-	<script src="login.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<script src="login.js"></script>
+
+<script>
+
+
+
+</script>
 
 
 </body>

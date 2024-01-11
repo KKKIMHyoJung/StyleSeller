@@ -1,3 +1,67 @@
+$(function(){
+  // Selecting elements
+  let hoverLink = $(".hover-li .nav-big-a");
+  let img = $(".hover-img");
+
+
+  hoverLink.eq(0).hover(
+    function(){
+
+      img.eq(0).css("display", "block");
+    },
+    function(){
+
+      img.eq(0).css("display", "none");
+    }
+  );
+
+
+  hoverLink.eq(1).hover(
+    function(){
+
+      img.eq(1).css("display", "block");
+    },
+    function(){
+
+      img.eq(1).css("display", "none");
+    }
+  );
+
+
+
+
+  hoverLink.eq(2).hover(
+    function(){
+
+      img.eq(2).css("display", "block");
+    },
+    function(){
+
+      img.eq(2).css("display", "none");
+    }
+  );
+
+
+
+
+  hoverLink.eq(3).hover(
+    function(){
+
+      img.eq(3).css("display", "block");
+    },
+    function(){
+
+      img.eq(3).css("display", "none");
+    }
+  );
+
+
+});
+
+
+
+
+
 function selectAll(selectAll)  {
   const checkboxes 
   = document.querySelectorAll('input[type="checkbox"]');
@@ -8,10 +72,6 @@ function selectAll(selectAll)  {
 
 
 }
-
-
-
-
 
 
 function checkForm() {
@@ -63,7 +123,6 @@ function checkForm() {
 
 
 
-
   if(!frm.phone.value) {
     frm.phone.focus();
     alert("전화번호를 입력해 주십시오.");
@@ -87,5 +146,6 @@ function checkForm() {
   }
 
 
-
 }
+
+

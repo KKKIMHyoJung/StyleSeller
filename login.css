@@ -1,8 +1,12 @@
 
 body {
+	width: 100%;
 	overflow-x: hidden;
 	padding-top: 40px;
 	padding-bottom: 50px;
+	background: rgb(175,92,231);	
+	background: linear-gradient(90deg, rgba(175,92,231,0.3013392857142857) 0%, rgba(226,144,210,0.1049107142857143) 50%, rgba(252,176,69,0) 100%);
+
 }
 
 
@@ -19,11 +23,39 @@ body {
 
 
 #wrapper {
-	width: 480px;
+	width: 90%;
 	padding: 50px 10px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 
+
+ul li {
+	list-style: none;
+	margin-bottom: 20px;
+
+}
+
+
+
+.hover-img {
+	display: none;
+}
+
+
+
+
+.nav-big-a {
+	color: black;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.nav-big-a:hover {
+	color: white;
+	text-decoration: none;
+}
 
 .cs-text-red {
 	color: red;
@@ -40,6 +72,22 @@ body {
 }
 
 
+#section1 {
+	width: 40%;
+
+}
+
+#section2 {
+	width: 460px;
+}
+
+
+
+#nav-big {
+
+
+
+}
 
 
 .header{
@@ -199,15 +247,16 @@ input[type="checkbox"]:checked + label:before {
 
 
 #nav {
+	position: relative;
 	width: 480px;
 	margin: 0 auto;
-	display: flex;
 	position: fixed;
-	padding: 20px 0 10px;
+	padding: 20px 0;
 	border-bottom: 1px solid #dee2e6;
 	z-index: 99;
 	background-color: white;
 	top: 0;
+	display: none;
 
 }
 
@@ -258,7 +307,8 @@ input[type="checkbox"]:checked + label:before {
 	position: fixed;
 	bottom: 0;
 	width: 480px;
-	background-color: white; 
+	background-color: white;
+	display: none;
 }
 
 
@@ -272,9 +322,75 @@ input[type="checkbox"]:checked + label:before {
 
 .nav2_menu  a {
 	text-decoration: none;
-	color: #232323
+	color: #232323;
 }
 
 .nav2_menu:nth-of-type(3) a, .nav2_menu:nth-of-type(3) p{
 	color: #6928ff;
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) and (min-width: 521px) { 
+
+
+	body {
+
+		background: white;
+
+	}
+
+
+
+
+
+	#nav {
+		display: flex;
+
+	}
+
+
+	#nav2 {
+		display: flex;
+
+	}
+
+
+	#section1 {
+		display: none;
+	}
+
+
+
+}
+
+
+@media screen and (max-width: 520px) {
+
+
+		body {
+
+		background: white;
+
+	}
+
+	#nav {
+		display: flex;
+		left: 0;
+	}
+
+
+	#nav2 {
+		display: flex;
+		left: 0;
+	}
+
+
+	#section1 {
+		display: none;
+	}
+
 }

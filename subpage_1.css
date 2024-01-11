@@ -1,57 +1,5 @@
 
 
-/*##################################
-font-family
-##################################*/
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    font-weight: 700;
-    src: local('Spoqa Han Sans Neo Bold'),
-    url('fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
-    url('fonts/SpoqaHanSansNeo-Bold.woff') format('woff'),
-    url('fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
-}
-
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    font-weight: 500;
-    src: local('Spoqa Han Sans Neo Medium'),
-    url('fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
-    url('fonts/SpoqaHanSansNeo-Medium.woff') format('woff'),
-    url('fonts/SpoqaHanSansNeo-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    font-weight: 400;
-    src: local('Spoqa Han Sans Neo Regular'),
-    url('fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
-    url('fonts/SpoqaHanSansNeo-Regular.woff') format('woff'),
-    url('fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    font-weight: 300;
-    src: local('Spoqa Han Sans Neo Light'),
-    url('fonts/SpoqaHanSansNeo-Light.woff2') format('woff2'),
-    url('fonts/SpoqaHanSansNeo-Light.woff') format('woff'),
-    url('fonts/SpoqaHanSansNeo-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    font-weight: 100;
-    src: local('Spoqa Han Sans Neo Thin'),
-    url('fonts/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
-    url('fonts/SpoqaHanSansNeo-Thin.woff') format('woff'),
-    url('fonts/SpoqaHanSansNeo-Thin.ttf') format('truetype');
-}
-
-
-
 *{
 	margin: 0;
 	padding: 0;
@@ -59,14 +7,15 @@ font-family
 }
 
 body {
+	width: 100%;
 	background-color: #F8F9FA;
+	overflow-x: hidden;
 }
 
 #wrapper{
-/*	border: 1px solid red;*/
-/*	width: 780px;*/
-	padding: 55px 28px 55px;
-	width: 640px;
+
+	padding-top: 55px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: white;
 }
@@ -95,14 +44,21 @@ body {
 	font-size: 1.2em;
 }
 
+
+.empty-box {
+	width: 300px;
+}
+
 .textbox-1 {
 /*	border: 1px solid red;*/
-	width: 90%;
+	width: 490px;
+	height: 250px;
 	padding: 20px 15px;
 	background: #F8F9FA;
 	border-radius: 20px;
 	text-align: center;
-	margin: 0 auto;
+	margin: 0px auto;
+	position: relative;
 }
 
 
@@ -129,13 +85,15 @@ body {
 
 .textbox-2 {
 /*	border: 1px solid red;*/
-	width: 90%;
+	width: 490px;
+	height: 250px;
 	padding: 20px 15px;
 	background: #A37BFF;
 	border-radius: 20px;
 	text-align: center;
-	margin: 20px auto;
+	margin: 0px auto;
 	color: white;
+	position: relative;
 }
 
 .textbox-2 p:nth-of-type(1) {
@@ -152,17 +110,30 @@ body {
 
 
 
+.text-box {
+	margin: 100px 0 0 0;
+	padding: 0 50px;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+/*  gap: 10px;*/
+}
 
 
 
 
+.width-700 {
+	width: 100%;
+	max-width: 1048px;
+	margin: 0 auto;
+}
 
 
 
 #sec7	{
 	width: 100%;
 	overflow: hidden;
-	padding: 10px 0;
+	padding: 10px 20px;
 }
 
 mark {
@@ -170,11 +141,11 @@ mark {
 }
 
 
-#sec7	.sec7_box {
-/*	border: 1px solid blue;*/
+#sec7 .sec7_box {
+
 	width: 90%;
 	padding: 20px 20px;
-	margin: 0 10px;
+	margin: 0 -10px 20px 10px;
 	overflow: hidden;
 }
 
@@ -183,11 +154,12 @@ mark {
 	width: 4300px;
 	overflow: hidden;
 	display: flex;
-	padding: 20px 20px;
-	margin: 0 10%;
+	padding: 20px 0px;
+	margin: 0 auto;
 	animation: movecard-sec7 15s linear infinite;
 	animation-play-state: running;
 	position: relative;
+	left: 5px;
 }
 
 
@@ -328,10 +300,66 @@ button {
 }
 
 
+@media screen and (max-width: 1800px) and (min-width : 1601px) {
+	.empty-box {
+		width: 200px;
+	}
+
+}
+
+
+@media screen and (max-width: 1600px) and (min-width : 1501px) {
+	.empty-box {
+		width: 150px;
+	}
+
+}
+
+
+@media screen and (max-width: 1500px) and (min-width : 1401px) {
+	.empty-box {
+		width: 100px;
+	}
+
+}
+
+
+@media screen and (max-width: 1400px) and (min-width : 1301px) {
+	.empty-box {
+		width: 30px;
+	}
+
+}
+
+
+@media screen and (max-width: 1300px) and (min-width : 1101px) {
+	.empty-box {
+		width: 10px;
+	}
+}
+
+@media screen and (max-width: 1100px) and (min-width : 768px) {
+
+	.textbox-2, .textbox-1 {
+
+		width: 400px;
+
+	}
+	.textbox-1 p, 	.textbox-2 p {
+		font-size: 13px;
+	}
+
+
+	.empty-box {
+		width: 0px;
+	}
+
+}
 
 
 
 @media screen and (max-width: 767px) {
+
 	#wrapper{
 /*	border: 1px solid red;*/
 /*	width: 780px;*/
@@ -339,20 +367,55 @@ button {
 	width: 400px;
 	margin: 0 auto;
 	background-color: white;
+	}
+
+
+	.textbox-1 {
+		font-size: 14px;
+		margin: 0 auto;
+		width: 360px;
+		height: 180px;
+	}
+	 
+
+	.textbox-2 {
+		font-size: 14px;
+		width: 360px;
+		margin: 40px 0;
+	}
+
+
+
+
+
+	.info-grid-wrapper {
+		font-size: 13px;
+
+	}
+
+
+	.text-title p:nth-of-type(2) {
+		font-size: 17px;
+
+	}
+
+	.text-box {
+		display: block;
+		position: relative;
+		right: 45px;
+	}
+
+
+
+	#sec7 .sec7_box {
+
+		width: 90%;
+		margin: 0 40px 30px -20px;
+
+
+	}
+
+
 }
 
 
-.textbox-1 {
-	font-size: 14px;
-}
-
-.info-grid-wrapper {
-	font-size: 13px;
-}
-
-
-.text-title p:nth-of-type(2) {
-	font-size: 17px;
-}
-
-}
