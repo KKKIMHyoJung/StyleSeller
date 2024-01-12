@@ -8,14 +8,14 @@
 }
 
 body {
+	width: 100%;
 	background-color: #F8F9FA;
+	overflow-x: hidden;
 }
 
 #wrapper{
-/*	border: 1px solid red;*/
-/*	width: 780px;*/
-	padding: 55px 28px 55px;
-	width: 640px;
+	padding: 55px 0;
+	width: 100%;
 	margin: 0 auto;
 	background-color: white;
 }
@@ -106,7 +106,13 @@ body {
 }
 
 
-
+.example-img.sm_hide {
+	background: url(img/lg-img.png) no-repeat;
+	background-size: contain;
+	width: 90%;
+	height: 420px;
+	margin: 0 auto;
+}
 
 .example {
 	margin-bottom: 60px;
@@ -129,19 +135,28 @@ body {
 }
 
 
+.sm_show {
+	display: none;
+}
 
 
+.sm_hide {
+	display: block;
+}
 
 
+.lg-textbox div	{
+	width: 700px;
+	height: 220px;
+	margin: 30px auto;
+}
 
 .textbox-2 {
 /*	border: 1px solid red;*/
-	width: 90%;
 	padding: 20px 15px;
 	background: #A37BFF;
 	border-radius: 20px;
 	text-align: center;
-	margin: 60px auto;
 	color: white;
 }
 
@@ -174,7 +189,7 @@ body {
 	display: block;
 	cursor: pointer;
 	background-color: black;
-	width: 90%;
+	width: 700px;
 	height: 60px;
 	margin: 0 auto;
 	text-align: center;
@@ -186,6 +201,8 @@ body {
 
 form {
 	margin-top: 30px;
+	width: 70%;
+
 }
 
 form div {
@@ -280,6 +297,52 @@ button {
 
 
 
+
+.width-700 {
+	width: 100%;
+	max-width: 1048px;
+	margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width: 1300px) and (min-width: 1101px) {
+
+.example-img.sm_hide {
+
+	width: 60%;
+	height: 200px;
+
+}
+
+}
+
+
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+
+.sm_show {
+	display: block;
+}
+
+
+.sm_hide {
+	display: none;
+}
+
+
+.width-700 {
+	width: 70%;
+	max-width: 1048px;
+	margin: 0 auto;
+}
+
+
+
+}
+
+
 @media screen and (max-width: 767px) {
 	#wrapper{
 /*	border: 1px solid red;*/
@@ -330,6 +393,32 @@ button {
 
 
 
+.sm_show {
+	display: block;
+}
 
+
+.sm_hide {
+	display: none;
+}
+
+
+
+
+.lg-textbox div	{
+	width: 90%;
+	height: 220px;
+	margin: 40px auto;
+}
+
+
+.pdf-btn a {
+
+	width: 90%;
+}
+
+form {
+	width: 100%;
+}
 
 }

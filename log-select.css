@@ -3,6 +3,7 @@ body {
 	overflow-x: hidden;
 	padding-top: 40px;
 	padding-bottom: 50px;
+	background: #f9eefc;
 }
 
 
@@ -19,14 +20,83 @@ body {
 
 
 #wrapper {
-	width: 480px;
-	padding: 50px 10px;
+	width: 100%;
+	padding: 50px 100px;
 	margin: 0 auto;
+}
+
+
+.select-menu {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.select-menu span a {
+	color: #ced4da;
+}
+
+
+
+.select-menu span:nth-of-type(1)::after {
+	content: " |";
+	color: #ced4da;
+}
+
+
+#submit_btn {
+	margin-top: 30px;
+	background-color: #A37BFF;
+	color: white;
+}
+
+#submit_btn:hover {
+	color: black;
+}
+
+
+
+
+.lg-view{
+	display: flex;
+	justify-content: center;
 }
 
 
 /*nav*/
 
+
+
+
+#section1 {
+	width: 50%;
+
+}
+
+#casousel {
+	width: 50%;
+}
+
+#section2 {
+	width: 460px;
+}
+
+
+.nav-big-a {
+	color: black;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+ul li {
+	list-style: none;
+	margin-bottom: 20px;
+
+}
+
+.nav-big img {
+	position: absolute;
+	top: 	0;
+}
 
 #nav {
 	width: 480px;
@@ -111,6 +181,160 @@ body {
 
 
 
+	#nav {
+		display:none;
+	}
+
+	#nav2 {
+		display:none;
+	}
+
+#form {
+	margin-top: 20px;
+}
+
+
+input {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+
+input::placeholder {
+	color: #ced4da;
+	padding: 5px;
+
+}
+
+
+input:focus {
+	outline: 1px solid #A37BFF;
+}
+
+
+
 
 
 /* 추가 css */
+
+
+
+@media screen and (max-width: 1000px) and (min-width: 768px) { 
+
+
+	body {
+
+		background: white;
+
+	}
+
+
+
+
+
+	#nav {
+		display: flex;
+
+	}
+
+
+	#nav2 {
+		display: flex;
+
+	}
+
+
+	#section1 {
+		display: none;
+	}
+
+	#casousel {
+		width: 100%;
+
+	}
+
+
+.select-menu {
+	text-align: center;
+}
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 521px) { 
+
+
+	body {
+
+		background: white;
+
+	}
+
+
+
+
+
+	#nav {
+		display: flex;
+
+	}
+
+
+	#nav2 {
+		display: flex;
+
+	}
+
+
+	#section1 {
+		display: none;
+	}
+
+	#casousel {
+		width: 100%;
+
+	}
+.select-menu {
+	text-align: center;
+}
+
+}
+
+
+
+@media screen and (max-width: 520px) {
+
+
+		body {
+
+		background: white;
+
+	}
+
+	#nav {
+		display: flex;
+		left: 0;
+	}
+
+
+	#nav2 {
+		display: flex;
+		left: 0;
+	}
+
+
+	#section1 {
+		display: none;
+	}
+
+#casousel {
+	width: 100%;
+
+}
+.select-menu {
+	text-align: center;
+}
+
+}

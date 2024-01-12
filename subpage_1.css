@@ -9,12 +9,15 @@
 body {
 	width: 100%;
 	background-color: #F8F9FA;
-	overflow-x: hidden;
+
+
+/*	overflow-x: hidden;*/
+
 }
 
 #wrapper{
-
-	padding-top: 55px;
+	margin: 55px 0;
+	padding: 55px 0;
 	width: 100%;
 	margin: 0 auto;
 	background-color: white;
@@ -57,8 +60,9 @@ body {
 	background: #F8F9FA;
 	border-radius: 20px;
 	text-align: center;
-	margin: 0px auto;
+	margin: 0 10px 0 0;
 	position: relative;
+	float: left;
 }
 
 
@@ -91,9 +95,10 @@ body {
 	background: #A37BFF;
 	border-radius: 20px;
 	text-align: center;
-	margin: 0px auto;
+	margin: 0 0 0 10px;
 	color: white;
 	position: relative;
+	float: left;
 }
 
 .textbox-2 p:nth-of-type(1) {
@@ -111,12 +116,15 @@ body {
 
 
 .text-box {
-	margin: 100px 0 0 0;
-	padding: 0 50px;
+	width: 100%;
+/*	margin: 100px 0 0 0;*/
+	padding: 0 0px;
 	display: flex;
 	justify-content: center;
   align-items: center;
-/*  gap: 10px;*/
+/*  overflow: hidden;*/
+  left: 50%;
+/*  margin-left: 100px;*/
 }
 
 
@@ -133,7 +141,7 @@ body {
 #sec7	{
 	width: 100%;
 	overflow: hidden;
-	padding: 10px 20px;
+/*	padding: 10px 20px;*/
 }
 
 mark {
@@ -143,7 +151,7 @@ mark {
 
 #sec7 .sec7_box {
 
-	width: 90%;
+	width: 100%;
 	padding: 20px 20px;
 	margin: 0 -10px 20px 10px;
 	overflow: hidden;
@@ -205,11 +213,6 @@ mark {
 	font-weight: bolder;
 }
 
-
-
-form {
-	margin-top: 30px;
-}
 
 form div {
 	margin-bottom: 20px;
@@ -354,6 +357,14 @@ button {
 		width: 0px;
 	}
 
+
+.width-700 {
+	width: 70%;
+	max-width: 1048px;
+	margin: 0 auto;
+}
+
+
 }
 
 
@@ -361,30 +372,31 @@ button {
 @media screen and (max-width: 767px) {
 
 	#wrapper{
-/*	border: 1px solid red;*/
-/*	width: 780px;*/
-	padding: 15px 28px 15px;
-	width: 400px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: white;
 	}
 
 
+
+	.textbox-1, .textbox-2{
+		width: 90%;
+		margin: 15px auto;
+	
+		float: none;
+	}
+
 	.textbox-1 {
-		font-size: 14px;
-		margin: 0 auto;
-		width: 360px;
-		height: 180px;
+		height: 150px;
 	}
-	 
+		.textbox-1 p {
+			font-size: 13px;
+		}
 
-	.textbox-2 {
-		font-size: 14px;
-		width: 360px;
-		margin: 40px 0;
+
+	.textbox-2{
+		margin-left: 0;
 	}
-
-
 
 
 
@@ -395,25 +407,33 @@ button {
 
 
 	.text-title p:nth-of-type(2) {
-		font-size: 17px;
+		font-size: 15px;
 
 	}
 
 	.text-box {
 		display: block;
-		position: relative;
-		right: 45px;
+		margin: 0 auto;
+		width: 90%;
+		padding: 0;
+
 	}
 
 
 
 	#sec7 .sec7_box {
-
-		width: 90%;
-		margin: 0 40px 30px -20px;
+		width: 80%;
+		margin: 0 auto;
 
 
 	}
+
+
+	.width-700 {
+		width: 90%;
+
+	}
+
 
 
 }
