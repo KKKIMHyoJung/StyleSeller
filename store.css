@@ -33,6 +33,10 @@ overflow-x:hidden;
 	line-height: 40px;
 }
 
+.cs-cursor-none {
+	cursor: default;
+}
+
 
 .cs-align-right {
 	align-content: right;
@@ -85,7 +89,8 @@ overflow-x:hidden;
 	color: white;
 	margin-top: 10px;
 	cursor: pointer;
-	line-height: 30px;
+	padding: 5px 0;
+	line-height: 15px;
 }
 
 
@@ -149,7 +154,7 @@ a {
 	line-height: 80px;
 	font-size: 25px;
 	display: block;
-	cursor: pointer;
+/*	cursor: pointer;*/
 	user-select: none;
 }
 
@@ -208,8 +213,15 @@ a {
 미디어쿼리
 ####################################*/
 
+/*
+@media screen (min-width: 501px) and (max-width: 800px) {
+	#footer {
+		padding: 40px 10px
+	}
 
-@media screen and (max-width: 500px) {
+}*/
+
+@media screen and (max-width: 750px) {
 
 	#footer {
 		padding: 40px 10px;
