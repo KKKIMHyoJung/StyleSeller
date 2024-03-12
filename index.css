@@ -62,7 +62,7 @@ mark {
 
 #gnb #navlogo {
 	border: 1px solid rgba(0,0,0,0);
-	background: url("img/logo.png") no-repeat center/cover;
+	background: url("../img/logo.png") no-repeat center/cover;
 	width: 128px;
 	height: 28px;
 	margin-right: 30px;
@@ -174,7 +174,7 @@ section1 기본 css
 #sec1 #main1 {
 	width: 100%;
 	height: 100%;
-	background: url("img/bg_main.jpeg") no-repeat center/cover;
+	background: url("../img/bg_main.jpeg") no-repeat center/cover;
 	position: relative;
 }
 
@@ -182,7 +182,7 @@ section1 기본 css
 #sec1 #main2 {
 	width: 100%;
 	height: 100%;
-	background: url("img/bg_main1.jpeg") no-repeat center/cover;
+	background: url("../img/bg_main1.jpeg") no-repeat center/cover;
 }
 
 
@@ -270,10 +270,10 @@ section1 기본 css
 
 
 
-.main1img {
+.main1../img/ {
 	contain: "";
 	display: inline-block;
-	background: url(img/it.png);
+	background: url(../img/it.png);
 	width: 58px;	
 	height: 39px;
 	position: relative;
@@ -394,7 +394,7 @@ section2 기본 css
 	overflow: hidden;
 	display: flex;
 	flex-wrap: nowrap;
-	background: url(img/bg_gradient.jpeg) no-repeat center;
+	background: url(../img/bg_gradient.jpeg) no-repeat center;
 	background-size: cover;
 	overflow: hidden;
 }
@@ -472,7 +472,7 @@ section2 기본 css
 
 #sec2content1 #sec2txt span:nth-of-type(2) {
 	contain: "";
-	background: url(img/ic_it.png) no-repeat center/cover;
+	background: url(../img/ic_it.png) no-repeat center/cover;
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -542,20 +542,20 @@ section2 기본 css
 
 
 #sec2 #carousel1 div.sec2card:nth-of-type(1) {
-	background: url(img/seller2.jpg) no-repeat center/cover;
+	background: url(../img/seller2.jpg) no-repeat center/cover;
 }
 
 
 #sec2 #carousel1 div.sec2card:nth-of-type(2) {
-	background: url(img/seller3.jpg) no-repeat center/cover;
+	background: url(../img/seller3.jpg) no-repeat center/cover;
 }
 
 #sec2 #carousel1 div.sec2card:nth-of-type(3) {
-	background: url(img/seller4.jpg) no-repeat center/cover;
+	background: url(../img/seller4.jpg) no-repeat center/cover;
 }
 
 #sec2 #carousel1 div.sec2card:nth-of-type(4) {
-	background: url(img/seller5.jpg) no-repeat center/cover;
+	background: url(../img/seller5.jpg) no-repeat center/cover;
 }
 
 
@@ -638,7 +638,7 @@ section3 기본 css
 
 
 #sec3 #sec3txt span {
-	background: url(img/ic_it.png);
+	background: url(../img/ic_it.png);
 	width: 20px;
 	height: 20px;
 	background-size: 20px;
@@ -741,9 +741,9 @@ section3 기본 css
 
 
 
-/* ###### sec3 - #sec3img ###### */
+/* ###### sec3 - #sec3../img/ ###### */
 
-#sec3 #sec3img {
+#sec3 #sec3 img {
 	height: 100%;
 	position: relative;
 	top: -220px;
@@ -754,8 +754,8 @@ section3 기본 css
 
 
 
-#sec3img .sec3_1st_img:nth-of-type(1) {
-	background: url(img/sns.png);
+#sec3 img .sec3_1st_img:nth-of-type(1) {
+	background: url(../img//sns.png);
 	width: 374px;
 	height: 107px;
 	top: 120px;
@@ -765,8 +765,8 @@ section3 기본 css
 }
 
 
-#sec3img .sec3_1st_img:nth-of-type(2) {
-	background: url(img/app_icon.png);
+#sec3 img .sec3_1st_img/:nth-of-type(2) {
+	background: url(../img/app_icon.png);
 	width: 145px;
 	height: 145px;
 	left: 50%;	
@@ -776,8 +776,8 @@ section3 기본 css
 }
 
 
-#sec3img .sec3_1st_img:nth-of-type(3) {
-	background: url(img/02_1b.png) no-repeat center/cover;
+#sec3 .sec3_1st_../img/:nth-of-type(3) {
+	background: url(../img//02_1b.png) no-repeat center/cover;
 	width: 260px;
 	height: 512.5px;
 	margin: 0 auto;
@@ -788,8 +788,8 @@ section3 기본 css
 }
 
 
-#sec3img .sec3_1st_img:nth-of-type(4) {
-	background: url(img/02_1b-1.png) no-repeat center/cover;
+#sec3../img/ .sec3_1st_../img/:nth-of-type(4) {
+	background: url(../img//02_1b-1.png) no-repeat center/cover;
 	width: 260px;
 	height: 512.5px;
 	top: 500px;
@@ -808,7 +808,7 @@ section4 기본 css
 	width: 100%;
 	height: 100vh;
 	min-height: 800px;
-	background: url(img/bg_3.jpeg) no-repeat center/cover;
+	background: url(../img//bg_3.jpeg) no-repeat center/cover;
 }
 
 #sec4 .sec4_contents{
@@ -969,20 +969,20 @@ section5 기본 css
 }
 
 #sec5 .sec5_card_wapper .sec5_card:nth-of-type(1) .sec5_card_bg, #sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(2) {
-	background: url(img/bg_review1.jpg) no-repeat center/cover;
+	background: url(../img//bg_review1.jpg) no-repeat center/cover;
 }
 
 
 #sec5 .sec5_card_wapper .sec5_card:nth-of-type(3) .sec5_card_bg, #sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(4) {
-	background: url(img/bg_review2.jpeg) no-repeat center/cover;
+	background: url(../img//bg_review2.jpeg) no-repeat center/cover;
 }
 
 #sec5 .sec5_card_wapper .sec5_card:nth-of-type(5) .sec5_card_bg, #sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(6) {
-	background: url(img/bg_review3.jpg) no-repeat center/cover;
+	background: url(../img//bg_review3.jpg) no-repeat center/cover;
 }
 
 #sec5 .sec5_card_wapper .sec5_card:nth-of-type(7) .sec5_card_bg, #sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(8) {
-	background: url(img/bg_review4.jpg) no-repeat center/cover;
+	background: url(../img//bg_review4.jpg) no-repeat center/cover;
 }
 
 
@@ -1003,34 +1003,34 @@ section5 기본 css
 	font-size: 1.0em;
 }
 
-#sec5 .sec5_card_wapper .sec5_card .sec5_card_seller .seller_img {
+#sec5 .sec5_card_wapper .sec5_card .sec5_card_seller .seller_../img/ {
 	width: 41px;
 	height: 41px;
 	margin-right: 15px;
 }
 
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(1) .sec5_card_seller .seller_img  {
-	background: url(img/seller_profile1.png) no-repeat center/cover;
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(1) .sec5_card_seller .seller_../img/  {
+	background: url(../img//seller_profile1.png) no-repeat center/cover;
 }
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(3) .sec5_card_seller .seller_img  {
-	background: url(img/seller_profile2.png) no-repeat center/cover;
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(3) .sec5_card_seller .seller_../img/  {
+	background: url(../img//seller_profile2.png) no-repeat center/cover;
 }
 
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(5) .sec5_card_seller .seller_img  {
-	background: url(img/seller_profile3.png) no-repeat center/cover;
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(5) .sec5_card_seller .seller_../img/  {
+	background: url(../img//seller_profile3.png) no-repeat center/cover;
 }
 
-#sec5 .sec5_card_wapper .sec5_card:nth-of-type(7) .sec5_card_seller .seller_img  {
-	background: url(img/seller_profile4.png) no-repeat center/cover;
+#sec5 .sec5_card_wapper .sec5_card:nth-of-type(7) .sec5_card_seller .seller_../img/  {
+	background: url(../img//seller_profile4.png) no-repeat center/cover;
 }
 
 
 
 #sec5 .sec5_card_wapper .sec5_card .sec5_card_title span {
-	background: url(img/ic_plus.png) no-repeat center/cover;
+	background: url(../img//ic_plus.png) no-repeat center/cover;
 	width: 33px;
 	height: 33px;
 	right: 40px;
@@ -1088,7 +1088,7 @@ section5 기본 css
 	margin-top: 20px;
 }
 
-#sec5 .sec5_card_wapper .sec5_card_hover .sec5_card_subimg {
+#sec5 .sec5_card_wapper .sec5_card_hover .sec5_card_sub../img/ {
 	width: 354px;
 	height: 374px;	
 	position: absolute;
@@ -1098,20 +1098,20 @@ section5 기본 css
 
 
 
-#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(2) .sec5_card_subimg{
-	background: url(img/seller_ui1.png);
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(2) .sec5_card_sub../img/{
+	background: url(../img//seller_ui1.png);
 
 }
-#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(4) .sec5_card_subimg{
-	background: url(img/seller_ui2.png);
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(4) .sec5_card_sub../img/{
+	background: url(../img//seller_ui2.png);
 
 }
-#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(6) .sec5_card_subimg{
-	background: url(img/seller_ui3.png);
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(6) .sec5_card_sub../img/{
+	background: url(../img//seller_ui3.png);
 
 }
-#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(8) .sec5_card_subimg{
-	background: url(img/seller_ui4.png);
+#sec5 .sec5_card_wapper .sec5_card_hover:nth-of-type(8) .sec5_card_sub../img/{
+	background: url(../img//seller_ui4.png);
 
 }
 
@@ -1389,8 +1389,8 @@ section8 기본 css
 }
 
 
-#sec8 .sec8_img {
-	background: url(img/partner_2111.jpg) no-repeat center/contain;
+#sec8 .sec8_../img/ {
+	background: url(../img//partner_2111.jpg) no-repeat center/contain;
 	max-width: 100%;
 	height: 620px;
 }
@@ -1709,7 +1709,7 @@ footer 기본 css
 	}
 
 
-	#sec5 .sec5_card_wapper .sec5_card_hover .sec5_card_subimg {
+	#sec5 .sec5_card_wapper .sec5_card_hover .sec5_card_sub../img/ {
 
 		left: calc(50% - 175px);
 
@@ -1921,18 +1921,18 @@ footer 기본 css
 
 
 	#main2 {
-		background: url(img/m_bg_main1.jpg) no-repeat center/cover !important;
+		background: url(../img//m_bg_main1.jpg) no-repeat center/cover !important;
 	}
 
 
 
-	#main1 .main1_txt .main1text,	#main1 .main1_txt .main1img {
+	#main1 .main1_txt .main1text,	#main1 .main1_txt .main1../img/ {
 		top: 150px;
 		left: 10px;
 	}
 
 
-	#main2 .main1_txt .main1text,	#main2 .main1_txt .main1img {
+	#main2 .main1_txt .main1text,	#main2 .main1_txt .main1../img/ {
 		top: 0px;
 		left: 50px;
 	}
@@ -2028,7 +2028,7 @@ footer 기본 css
 
 
 
-	#sec3 #sec3img {
+	#sec3 #sec3../img/ {
 		opacity: 0.1;
 		left: 1%;
 	}
@@ -2057,7 +2057,7 @@ footer 기본 css
 
 
 	#sec4 {
-		background: url(img/m_bg_3.jpg) no-repeat center/cover !important;
+		background: url(../img//m_bg_3.jpg) no-repeat center/cover !important;
 	}
 
 	#sec4 .sec4_contents{
@@ -2168,7 +2168,7 @@ footer 기본 css
 		font-size: 0.9em;
 	}
 
-	#sec5 .sec5_card_wapper .sec5_card .sec5_card_seller .seller_img {
+	#sec5 .sec5_card_wapper .sec5_card .sec5_card_seller .seller_../img/ {
 		width: 35px;
 		height: 35px;
 		margin-right: 10px;
@@ -2203,12 +2203,12 @@ footer 기본 css
 	}
 
 
-	.sec5_card_subimg {
+	.sec5_card_sub../img/ {
 		display: none;
 	}
 
 	.sec5_close_btn {
-		background: url(img/ic_plus.png) no-repeat center/cover;
+		background: url(../img//ic_plus.png) no-repeat center/cover;
 		width: 33px;
 		height: 33px;
 		right: 40px;
@@ -2300,8 +2300,8 @@ footer 기본 css
 	}
 
 
-	#sec8 .sec8_img {
-		background: url(img/m_partner_2111.jpg) no-repeat center/100%;
+	#sec8 .sec8_../img/ {
+		background: url(../img//m_partner_2111.jpg) no-repeat center/100%;
 		height: 850px;
 	}
 
@@ -2352,7 +2352,7 @@ footer 기본 css
 
 	#footer {
 		width: calc(100% - 20px);
-		padding: 20px 20px;
+		padding: 10px 10px;
 
 	}
 
