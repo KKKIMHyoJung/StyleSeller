@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- js cdn -->
+	<script src="https://code.jquery.com/jquery.js"></script>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -59,7 +61,7 @@
 
 
 
-<div class="row">
+<div class="row mb-4">
 
 
 	<div class="col-12 d-flex justify-content-between mt-3">	
@@ -370,7 +372,7 @@
 			<div class="timerWrap">
 				<div class="timerBox">
 					<!-- settingTime의 원하는 날짜/시간 입력 -->
-					<div class="settingTime">january 31, 2024, 00:00:00</div>
+					<div class="settingTime">march 31, 2024, 00:00:00</div>
 					<div class="countNumberWrap mt-3"> 
 						<span>⏰</span>
 						<span class="d-day-day">
@@ -432,7 +434,7 @@
 			<h4>뷰티 특가 ✨</h4>
 			<div class="timerBox">
 				<!-- settingTime의 원하는 날짜/시간 입력 -->
-				<div class="settingTime d-none">january 31, 2024, 00:00:00</div>
+				<div class="settingTime d-none">march 31, 2024, 00:00:00</div>
 				<div class="countNumberWrap mt-3">
 					<span class="mr-2 beauty-time">남은 시간!</span>
 					<br>
@@ -587,59 +589,13 @@
 
 
 
+	
+
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-	<script>
 
-		$(function(){
-			alert("쇼핑몰 개편중이므로 일부 메뉴 사용 불가입니다 :) 더 똑똑해질 스타일셀러를 위해 조금만 기다려주세요! ")
-		})
-
-
-		let timeDiv = document.querySelectorAll('.timerBox .settingTime');
-		let timeArray=[];
-
-		timeDiv.forEach((elem, i)=>{
-			setInterval(() => {
-				const nowTime = new Date().getTime();
-				const endTime = new Date(elem.innerText).getTime();
-				const diff = endTime - nowTime;
-
-        let diffDay = Math.floor(diff / (1000*60*60*24)); //day
-        let diffHour = Math.floor((diff / (1000*60*60)) % 24); //100이하 hour
-        let nodayHour = Math.floor((diff / (1000*60*60))); //hour
-        let diffMin = Math.floor((diff / (1000*60)) % 60); //minutes
-        let diffSec = Math.floor(diff / 1000 % 60); //seconds
-
-        //각 시간 영역이 10이하 될때
-        if(nodayHour < 10 && nodayHour > 0 ){ nodayHour = '0'+nodayHour;}
-        if(diffHour < 10  && diffHour > 0 ){ diffHour = '0'+diffHour; }
-        if(diffMin < 10   && diffMin > 0 ){ diffMin = '0'+diffMin; }
-        if(diffSec < 10   && diffSec > 0 ){ diffSec = '0'+diffSec; }
-
-
-        if(nodayHour<=0){ nodayHour = '00';}
-        if(diffHour<=0){ diffHour = '00'; }
-        if(diffMin<=0){ diffMin = '00'; }
-        if(diffSec<=0){ diffSec = '00'; }
-
-        if(nodayHour>=100){
-        	document.querySelectorAll('.d-day-day')[i].innerText = diffDay +'일';
-        	document.querySelectorAll('.d-day-hour')[i].innerText = diffHour +':';
-        	document.querySelectorAll('.d-day-min')[i].innerText = diffMin +':';
-        	document.querySelectorAll('.d-day-sec')[i].innerText = diffSec;
-        }else{
-        	document.querySelectorAll('.d-day-hour')[i].innerText = nodayHour +':';
-        	document.querySelectorAll('.d-day-min')[i].innerText = diffMin +':';
-        	document.querySelectorAll('.d-day-sec')[i].innerText = diffSec;
-        }
-    }, 1000);
-
-		});
-
-	</script>
-
+<script type="text/javascript" src="store.js"></script> 
 </body>
 </html>
